@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- START BOOTSTRAP STYLESHEET -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- START FONT AWOSOME ICON -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- START MAIN STYLESHEET -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Start Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&family=DynaPuff:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+  <title>Super Pet</title>
+</head>
+<body>
+
+
+   		<!-- Start Header -->
+       <div id="mySidenav" style="background: var(--main-color) !important;" class="sidenav bg-secondary text-white position-fixed h-100">
+        <a class="font-17 font-w700 m-4 d-block text-white" href="javascript:void(0)" onclick="openNav()">
+            <i class="fa fa-times mr-2"></i> Close
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cats</a>
+            <ul class="dropdown-menu" style="transition: 0.3s;">
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dogs</a>
+            <ul class="dropdown-menu" >
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Birds</a>
+            <ul class="dropdown-menu" >
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Fish</a>
+            <ul class="dropdown-menu" >
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Reptile</a>
+            <ul class="dropdown-menu" >
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Name Sub Menu</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="p-4">
+            <div class="mb-2">
+                <form action="#">
+                    <div class="row g-0">
+                        <div class="col-9">
+                            <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary btn-block rounded-start-0 d-flex align-items-center justify-content-center w-100 h-100" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+                Services
+            </a>
+            <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+                <i class="fa fa-user-circle me-2"></i>
+                Login / Signup
+            </a>
+            <a class="btn btn-primary position-relative d-flex align-items-center justify-content-between" href="#">
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-shopping-bag me-2"></i>
+                    Cart
+                </div>
+                <span class="text-white bg-secondary iconcart d-flex align-items-center justify-content-center rounded-circle" style="width: 25px; height: 25px;">4</span>
+            </a>
+            <div class="mt-4">
+                <p class="mb-2 line-12 d-flex gap-3 align-items-center">
+                    <i class="fa fa-3 text-center font-20 fa-map-marker-alt text-primary mr-24" style="font-size: 24px; color: #b9d432 !important;"></i>
+                    77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
+                </p>
+                <a class="gap-3 mb-0 line-12 d-flex align-items-center" href="tel:+201115477484" >
+                    <i class="fa fa-30 text-center font-20 fa-phone text-primary mr-24" style="font-size: 24px; color: #b9d432 !important;"></i>
+                    +201115477484
+                </a>
+            </div>
+        </div>
+        <div class="px-4 pb-4">
+            <ul class="d-flex mb-4 justify-content-around">
+                <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+                <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+                <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+                <li><a href="#" class="in fab fa-instagram"></a></li>
+                <li><a href="#" class="yt fab fa-youtube"></a></li>
+            </ul>
+        </div>
+    </div>
+      
+      <div id="sidebody"></div>
+         <header>
+        <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
+          <div class="container">
+            <div class="headertop__left d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-4">
+                <p class="font-17 mb-0 text-center gap-3 d-flex align-items-center mr-4">
+                  <i class="fa fa-map-marker-alt mr-24"></i>
+                  77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
+                </p>
+                <a class="font-17 mb-0 text-center gap-3 d-flex align-items-center" href="tel:+201115477484">
+                  <i class="fa fa-phone mr-24"></i>
+                  +201115477484
+                </a>
+              </div>
+              <a class="btn btn-secondary d-flex align-items-center" href="#">
+                <i class="fa fa-globe mr-2"></i>
+                عربي
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="headerbg w-100">
+          <div class="container">
+            <nav class="navbar styledropdown navbar-expand-xl p-0">
+              <a class="navbar-brand position-relative p-0" href="#" aria-label="Super Pet">
+                <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
+              </a>
+              <!-- <div class="d-flex d-xl-none justify-content-end h-100 ">
+                <button class="iconbars bg-transparent border-0 p-0" href="javascript:void(0)" onclick="openNav()" aria-label="فتح القائمة" title="فتح القائمة">
+                  <span></span><span></span><span></span>
+                </button>
+              </div> -->
+              <div class="d-md-block d-lg-none">
+                <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
+              </div>
+              
+              <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
+                <div class="headerbg__topMenus flex-fill w-100">
+                  <div class="row align-items-center justify-content-between mb-3">
+                    <div class="col-lg-4">
+                      <form action="#">
+                        <div class="row g-0">
+                          <div class="col-9">
+                            <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                          </div>
+                          <div class="col-3">
+                            <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                              <i class="fa fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                      <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
+                        Services
+                      </a>
+                      <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
+                        <i class="fa fa-user-circle me-2"></i>
+                        Login / Signup
+                      </a>
+                      <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#">
+                        <i class="fa fa-shopping-bag fs-4"></i>
+                        <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">4</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between w-100">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Cats</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Dogs</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Birds</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Fish</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Reptile</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Name Sub Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <ul class="sharesocial d-flex">
+                    <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+                    <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+                    <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+                    <li><a href="#" class="in fab fa-instagram"></a></li>
+                    <li><a href="#" class="yt fab fa-youtube"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <aside>
+      <!-- / END Header -->
+
+
+<section class="hero  position-relative" id="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide position-relative"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row gy-4">
+              <div class="col-lg-5">
+                <div class="hero-text">
+                  <h1>Healthy Pets, Happy People</h1>
+                  <h3>
+                    We are your local dog home boarding service giving you
+                    complete
+                  </h3>
+                  <button>Get Appointment</button>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="hero-img">
+                  <img src="img/person.png" class="img-2" alt="person img" />
+                  <img src="img/hero-2.png" class="img-1" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="row gy-4">
+              <div class="col-lg-5">
+                <div class="hero-text">
+                  <h1>Healthy Pets, Happy People</h1>
+                  <h3>
+                    We are your local dog home boarding service giving you
+                    complete
+                  </h3>
+                  <button>Get Appointment</button>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="hero-img">
+                  <img src="img/dog.png" class="img-2" alt="person img" />
+                  <img src="img/hero-2.png" class="img-1" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="row gy-4">
+              <div class="col-lg-5">
+                <div class="hero-text">
+                  <h1>Healthy Pets, Happy People</h1>
+                  <h3>
+                    We are your local dog home boarding service giving you
+                    complete
+                  </h3>
+                  <button>Get Appointment</button>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="hero-img">
+                  <img src="img/cat.png" class="img-2" alt="person img" />
+                  <img src="img/hero-2.png" class="img-1" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="py-5 py-lg-5">
+  <div class="container">
+    <div class="row row-col-xl justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-5">
+      <div class="col">
+        <a class="boxicons d-block my-3 wow fadeInUp" href="#" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxicons__icon position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4">
+            <img class="img-fluid d-block mx-auto" src="img/icon-3.png" alt="">
+          </div>
+          <p class="font-w700 mb-0 text-center font-20 line-12 font-md-30 font-w500">
+            Dog Food
+          </p>
+        </a>
+      </div>
+      <div class="col">
+        <a class="boxicons d-block my-3 wow fadeInUp" href="#" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxicons__icon position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4">
+            <img class="img-fluid d-block mx-auto" src="img/icon-4.png" alt="">
+          </div>
+          <p class="fw-bold mb-0 text-center font-20 line-12 font-md-30 font-w500">
+            Fish Food
+          </p>
+        </a>
+      </div>
+      <div class="col">
+        <a class="boxicons d-block my-3 wow fadeInUp" href="#" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxicons__icon position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4">
+            <img class="img-fluid d-block mx-auto" src="img/icon-5.png" alt="">
+          </div>
+          <p class="fw-bold mb-0 text-center font-20 line-12 font-md-30 font-w500">
+            Rabbit Food
+          </p>
+        </a>
+      </div>
+      <div class="col">
+        <a class="boxicons d-block my-3 wow fadeInUp" href="#" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxicons__icon position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4">
+            <img class="img-fluid d-block mx-auto" src="img/icon-6.png" alt="">
+          </div>
+          <p class="fw-bold mb-0 text-center font-20 line-12 font-md-30 font-w500">
+            Cat Food
+          </p>
+        </a>
+      </div>
+      <div class="col">
+        <a class="boxicons d-block my-3 wow fadeInUp" href="#" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxicons__icon position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4">
+            <img class="img-fluid d-block mx-auto" src="img/icon-7.png" alt="">
+          </div>
+          <p class="fw-bold mb-0 text-center font-20 line-12 font-md-30 font-w500">
+            Bird Food
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light2 py-5 py-lg-5">
+  <div class="container">
+    <div class="mb-5 text-center title__shapes position-relative py-24 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <h3 class="position-relative font-w400 font-title font-34 font-md-50">
+        </h3>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="boxservices text-center p-4 p-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxservices__thu position-relative mx-auto">
+            <img class="img-fluid img-h90 mb-4 position-relative d-block mx-auto" src="img/icon-8.png" alt="">
+          </div>
+          <p class="font-title font-34 mb-2">
+            Grooming Salon
+          </p>
+          <p class="font-18 mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et corporis officia illum eum totam qui dolore
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="boxservices text-center p-4 p-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxservices__thu position-relative mx-auto">
+            <img class="img-fluid img-h90 mb-4 position-relative d-block mx-auto" src="img/icon-9.png" alt="">
+          </div>
+          <p class="font-title font-34 mb-2">
+            Pet's Training
+          </p>
+          <p class="font-18 mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et corporis officia illum eum totam qui dolore
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="boxservices text-center p-4 p-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="boxservices__thu position-relative mx-auto">
+            <img class="img-fluid img-h90 mb-4 position-relative d-block mx-auto" src="img/icon-10.png" alt="">
+          </div>
+          <p class="font-title font-34 mb-2">
+            Dog's Walking
+          </p>
+          <p class="font-18 mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et corporis officia illum eum totam qui dolore
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="product py-5">
+    <div class="container">
+      <div class="header text-center">
+        <img src="img/header-img.png" width="66" style="padding-bottom: 16px;" alt="">
+        <h6>Find Healthy Product</h6>
+        <h2>Healthy Products</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-1.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-2.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-3.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-4.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-1.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-2.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-3.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="healthy-product">
+            <div class="healthy-product-img">
+                <img src="img/food-4.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <div class="add-to-cart">
+                  <a href="#">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+            </div>
+            <span>Animal Feed</span>
+            <a href="our-products.html">Procan Adult Dog Food</a>
+            <h6>$32.00</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="healthy-product mb-lg-0">
+              <div class="healthy-product-img">
+                  <img src="img/food-3.png" alt="food">
+                  <ul class="star">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                  <h4>-24%</h4>
+              </div>
+              <span>Animal Feed</span>
+              <a href="our-products.html">Cattle Feed</a>
+              <h6><del>$32.00</del>$22.00</h6>
+          </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="deal-of-the-week">
+            <div class="healthy-product-img">
+                <h6>Deal of the Week</h6>
+                <img src="img/food-6.png" alt="food">
+                <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="healthy-product">
+                <span>Animal Feed</span>
+                <a href="our-products.html">Healthy Dog Food Roaster Chicken</a>
+              <div>
+                <h6><del>$32.00</del>$22.00</h6>
+                <h5>up to 14% off</h5>
+              </div>
+                <div class="add-to-cart">
+                  <a href="#" class="button">Add to Cart</a>
+                  <a href="#" class="heart-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+                <div id="countdown">
+                    <ul class="d-flex
+                    ">
+                      <li><span id="days">10</span>days</li>
+                      <li><span id="hours">71</span>Hour</li>
+                      <li><span id="minutes">65</span>Min</li>
+                      <li class="mb-0"><span id="seconds">23</span>Sec</li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+      </div>
+
+    </div>
+  </section>
+  <div class="blog py-5">
+    <div class="container">
+      <div class="header text-center">
+          <img src="img/header-img.png" alt="heading-img">
+          <h6>Blog and News</h6>
+          <h2>Recent Articles</h2>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-md-6">
+              <div class="blog-style">
+                  <figure>
+                      <img src="img/blog-1.jpg" alt="img">
+                  </figure>
+                  <a href="#"><h6>Animal Care</h6></a>
+                  <div class="blog-style-text">
+                      <h5>23<span>May,2023</span></h5>
+                      <div>
+                          <a href="blog-details.html"><h3>The Best High Fiber Dog Food</h3></a>
+                          <p>Lorem ipsum dolor sit amet ur adipiscing elit, sed do eiuincididunut labore et.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="blog-style">
+                  <figure>
+                      <img src="img/blog-1.jpg" alt="img">
+                  </figure>
+                  <a href="#"><h6>Animal Care</h6></a>
+                  <div class="blog-style-text">
+                      <h5>23<span>May,2023</span></h5>
+                      <div>
+                          <a href="blog-details.html"><h3>The Best High Fiber Dog Food</h3></a>
+                          <p>Lorem ipsum dolor sit amet ur adipiscing elit, sed do eiuincididunut labore et.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="blog-style">
+                  <figure>
+                      <img src="img/blog-1.jpg" alt="img">
+                  </figure>
+                  <a href="#"><h6>Animal Care</h6></a>
+                  <div class="blog-style-text">
+                      <h5>23<span>May,2023</span></h5>
+                      <div>
+                          <a href="blog-details.html"><h3>The Best High Fiber Dog Food</h3></a>
+                          <p>Lorem ipsum dolor sit amet ur adipiscing elit, sed do eiuincididunut labore et.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+      <div class="btn-center">
+              <a href="our-blog.html" class="button">View All News</a>
+          </div>
+  </div>
+  </div>
+
+  <div class="svgblock2">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+					<path style="transform: translateY(1px);" d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z"></path>
+				</svg>
+			</div>
+			<div class="boxdownwithfooter pt-5 pt-lg-5 bg-secondary text-white">
+				<div class="container">
+
+          <div class="header text-center">
+            <img src="img/header-img.png" alt="heading-img">
+            <h2 class="text-white">Our Best Partner</h2>
+        </div>
+
+					<div class="d-flex flex-wrap align-items-center justify-content-center">
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-1.webp" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-2.png" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-3.png" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-4.png" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-5.webp" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-6.png" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-7.png" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-8.jpeg" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-9.jpeg" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-10.png" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-11.webp" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-12.webp" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-13.png" alt="">
+						</div>
+						<div class="m-2 p-4 bg-white rounded-xl wow fadeInUp">
+							<img class="img-fluid img-h70" src="img/p-14.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Start Footer -->
+		</aside>
+		<footer>
+			<div class="footershap position-relative">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+					<path d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z"></path>
+				</svg>
+			</div>
+			<div class="footercontact pb-5 position-relative">
+				<div class="container">
+					<div style="background-color: #b9d432;" class=" text-white p-4 p-lg-5 rounded-xl">
+						<div class="row align-items-center justify-content-between">
+							<div class="col-lg-6 mb-4 mb-lg-0">
+								<div class="d-flex align-items-center mb-3 wow fadeInUp">
+									<div class="me-4">
+										<i class=" fa-2x text-center fa fa-map-marker-alt font-36" style="color: var(--main-color);"></i>
+									</div>
+									<div>
+										<p class="font-17 fw-bold line-12 mb-0 text-white-70">Visit us at</p>
+										<p class="font-17 fw-bolder mb-0">
+											77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
+										</p>
+									</div>
+								</div>
+								<div class="d-flex align-items-center wow fadeInUp">
+									<div class="me-3">
+										<i class=" fa-2x text-center far fa-clock font-36" style="color: var(--main-color);"></i>
+									</div>
+									<div>
+										<p class="font-17 fw-bold line-12 mb-0 text-white-70">Office hours</p>
+										<p class="font-17 fw-bolder mb-0">
+											8 AM - 5 PM
+										</p>
+										<p class=" fs-6 mb-0 line-12 text-white-70">
+											We may operate 24/7 depending on projects demand, 
+											<br>
+											considering the site condition and time limit.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="text-center wow fadeInUp">
+									<div class="mb-2">
+										<i class="fa-2x text-center fa fa-envelope text-secondary font-36" style="color: var(--main-color) !important;"></i>
+									</div>
+									<div>
+										<p class="font-17 font-w500 line-12 mb-0 text-white-70">Send Your Email</p>
+										<a class="font-17 font-w700" href="maitl:info@superpet.com">info@superpet.com</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="text-center wow fadeInUp">
+									<div class="mb-2">
+										<i class="fa-2x text-center fa fa-phone-alt text-secondary font-36" style="color: var(--main-color) !important;"></i>
+									</div>
+									<div>
+										<p class="font-17 font-w500 line-12 mb-0 text-white-70">Inquire now</p>
+										<a class="font-17 font-w700" href="tel:+201115477484">+201115477484</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerbg position-relative text-white">
+				<div class="container position-relative">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-lg-4 text-center text-md-left">
+							<img class="img-fluid  0 mb-4 mb-lg-5 wow fadeInUp" src="img/logo.png" alt="">
+							<p class="font-17 mb-4 mb-lg-5 text-white-70 wow fadeInUp">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, corrupti amet! Quam veniam neque distinctio amet libero facilis, tempora animi corrupti doloribus numquam repellat dolor atque, laboriosam ab ipsa accusantium.
+							</p>
+							<p class="font-w700 font-17 wow fadeInUp">
+								Follow us on social media
+							</p>
+							<ul class="sharesocial d-flex ">
+								<li><a href="#" class="fb fab fa-facebook-f"></a></li>
+								<li><a href="#" class="tw fab fa-twitter"></a></li>
+								<li><a href="#" class="li fab fa-linkedin-in"></a></li>
+								<li><a href="#" class="in fab fa-instagram"></a></li>
+								<li><a href="#" class="yt fab fa-youtube"></a></li>
+								<li><a href="#" class="pi fab fa-pinterest"></a></li>
+							</ul>
+						</div>
+						<div class="col-lg-7 mt-4 mt-lg-0">
+							<p class="font-w700 font-22 font-lg-24 mb-3 text-primary wow fadeInUp">
+								Useful Links
+							</p>
+							<ul class="footerbg__links d-flex flex-wrap list-unstyled font-16 font-w500 mb-0 wow fadeInUp">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Cats</a></li>
+								<li><a href="#">Dogs</a></li>
+								<li><a href="#">Birds</a></li>
+								<li><a href="#">Fish</a></li>
+								<li><a href="#">Reptile</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="border-top py-4 mt-5 d-lg-flex align-items-center justify-content-between text-center">
+						<p class="font-18 line-10 font-w500 mb-3 mb-lg-0 wow fadeInUp">
+							&copy; <span class="text-primary">SuperPet</span> 2024
+						</p>
+						<a class="d-flex align-items-center justify-content-center wow fadeInUp" href="http://www.meetsupevents.com/" target="_blank">
+							Designed and Developed by <img class="img-fluid ml-3" src="img/meetsupevents.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+  <!-- START BOOTSTRAP JS FILE -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- START JQUIRY FILE -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
