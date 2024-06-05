@@ -94,10 +94,9 @@ ul {
   }
 
   .hero {
-    height: 850px;
+    height: 823px;
   }
 }
-
 
 .hero-text {
   z-index: 100;
@@ -228,22 +227,20 @@ h3 {
   margin-left: 0%;
 }
 
-
 @media (max-width: 780px) {
-
-.hero .carousel-indicators {
+  .hero .carousel-indicators {
     position: absolute;
     right: auto;
-    bottom: -25px;
+    bottom: 15px;
     left: 0;
-    z-index: 2;
+    z-index: 2000;
     display: flex;
     justify-content: center;
     padding: 0;
     margin-right: 15%;
     margin-bottom: 0;
     margin-left: 0%;
-}
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -1649,14 +1646,14 @@ ul.social-icon i {
   font-size: 22px;
 }
 
-@media (max-width:781px) {
+@media (max-width: 781px) {
   .copyright {
     display: flex;
     flex-direction: column-reverse;
   }
 
   .copyright a {
-    border-radius: 10px ;
+    border-radius: 10px;
   }
 }
 
