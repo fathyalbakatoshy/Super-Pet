@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Start Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&family=DynaPuff:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+  <title>Super Pet</title>
+</head>
+<body>
+  <div id="mySidenav" style="background: var(--main-color) !important;" class="sidenav bg-secondary text-white position-fixed h-100">
+    <a class="font-17 font-w700 m-4 d-block text-white" href="javascript:void(0)" onclick="openNav()">
+        <i class="fa fa-times mr-2"></i> Close
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop.html">Shop</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cats</a>
+        <ul class="dropdown-menu" style="transition: 0.3s;">
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dogs</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Birds</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Fish</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Reptile</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    <div class="p-4">
+        <div class="mb-2">
+            <form action="#">
+                <div class="row g-0">
+                    <div class="col-9">
+                        <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary btn-block rounded-start-0 d-flex align-items-center justify-content-center w-100 h-100" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+            Services
+        </a>
+        <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+            <i class="fa fa-user-circle me-2"></i>
+            Login / Signup
+        </a>
+        <a class="btn btn-primary position-relative d-flex align-items-center justify-content-between" href="#">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-shopping-bag me-2"></i>
+                Cart
+            </div>
+            <span class="text-white bg-secondary iconcart d-flex align-items-center justify-content-center rounded-circle" style="width: 25px; height: 25px;">4</span>
+        </a>
+        <div class="mt-4">
+            <p class="mb-2 line-12 d-flex gap-3 align-items-center">
+                <i class="fa fa-3 text-center font-20 fa-map-marker-alt text-primary mr-24" style="font-size: 24px; color: #b9d432 !important;"></i>
+                77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
+            </p>
+            <a class="gap-3 mb-0 line-12 d-flex align-items-center" href="tel:+201115477484" >
+                <i class="fa fa-30 text-center font-20 fa-phone text-primary mr-24" style="font-size: 24px; color: #b9d432 !important;"></i>
+                +201115477484
+            </a>
+        </div>
+    </div>
+    <div class="px-4 pb-4">
+        <ul class="d-flex mb-4 justify-content-around">
+            <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+            <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+            <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+            <li><a href="#" class="in fab fa-instagram"></a></li>
+            <li><a href="#" class="yt fab fa-youtube"></a></li>
+        </ul>
+    </div>
+</div>
+
+<header>
+  <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
+    <div class="container">
+      <div class="headertop__left d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-4">
+          <p class="font-17 mb-0 text-center gap-3 d-flex align-items-center mr-4">
+            <i class="fa fa-map-marker-alt mr-24"></i>
+            77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
+          </p>
+          <a class="font-17 mb-0 text-center gap-3 d-flex align-items-center" href="tel:+201115477484">
+            <i class="fa fa-phone mr-24"></i>
+            +20 111-547-7484
+          </a>
+        </div>
+        <a class="btn btn-secondary d-flex align-items-center" href="#">
+          <i class="fa fa-globe mr-2"></i>
+          عربي
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="headerbg w-100">
+    <div class="container">
+      <nav class="navbar styledropdown navbar-expand-xl p-0">
+        <a class="navbar-brand position-relative p-0" href="#" aria-label="Super Pet">
+          <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
+        </a>
+
+        <div class="d-md-block d-lg-none">
+          <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
+        </div>
+        
+        <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
+          <div class="headerbg__topMenus flex-fill w-100">
+            <div class="row align-items-center justify-content-between mb-3">
+              <div class="col-lg-4">
+                <form action="#">
+                  <div class="row g-0">
+                    <div class="col-9">
+                      <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                    </div>
+                    <div class="col-3">
+                      <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
+                  Services
+                </a>
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
+                  <i class="fa fa-user-circle me-2"></i>
+                  Login / Signup
+                </a>
+                <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#">
+                  <i class="fa fa-shopping-bag fs-4"></i>
+                  <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">4</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shop.html">Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Cats</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Dogs</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Birds</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Fish</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Reptile</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="sharesocial d-flex">
+              <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+              <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+              <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+              <li><a href="#" class="in fab fa-instagram"></a></li>
+              <li><a href="#" class="yt fab fa-youtube"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero-shop">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Our Products</h2>
+        <div>
+          <a href="/index.html">Home</a>
+          /
+          <a href="/shop.html">Shop</a>
+        </div>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+
+</section>
+
+<section class="shop">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <h3>Category</h3>
+          <div class="boder-bar"></div>
+          <ul class="category">
+            <li>
+              <a href="#">Cat Supplies<span>32</span></a>
+            </li>
+            <li>
+              <a href="#">Dog Supplies<span>12</span></a>
+            </li>
+            <li>
+              <a href="#">Animal Feed<span>14</span></a>
+            </li>
+            <li class="end">
+              <a href="#">Accessories<span>32</span></a>
+            </li>
+          </ul>
+      </div>
+      <div class="sidebar">
+        <h3>Price range</h3>
+        <div class="boder-bar"></div>
+        <div class="wrapper">
+          <fieldset class="filter-price">
+           <div class="price-wrap">
+              <span class="price-title">Price</span>
+              <div class="price-wrap-1">
+                <input id="one">
+                <label for="one">L.E</label>
+              </div>
+              <div class="price-wrap_line">-</div>
+              <div class="price-wrap-2">
+                <input id="two">
+                <label for="two">L.E</label>
+              </div>
+            </div>
+            <div class="price-field">
+              <input type="range" min="0" max="1500" value="0" id="lower">
+              <input type="range" min="200" max="1500" value="1500" id="upper">
+            </div>
+            <button class="w-100 button">Filter</button>
+          </fieldset> 
+        </div>
+    </div>
+    <div class="sidebar">
+      <h3>Top Products</h3>
+      <div class="boder-bar"></div>
+      <ul class="top-products">
+        <li>
+          <img src="img/product/Picture1.jpg" class="w-50" alt="top-products">
+          <div>
+            <a href="#">Procan Adult Dog Food</a>
+            <span>450 L.E</span>
+          </div>
+        </li>
+        <li>
+          <img src="img/product/Picture2.jpg" class="w-50" alt="top-products">
+          <div>
+            <a href="#">Procan Adult Dog Food</a>
+            <span>230 L.E</span>
+          </div>
+        </li>
+        <li>
+          <img src="img/product/Picture3.jpg" class="w-50" alt="top-products">
+          <div>
+            <a href="#">Procan Adult Dog Food</a>
+            <span>230 L.E</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="items-number d-flex justify-content-between align-items-center">
+          <span>Items 1-25 of 6133</span>
+          <div class="d-flex align-items-center gap-4">
+            <span>Sort By</span>
+            <button class="dropdown-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Recently Added
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </div>  
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" onclick="openDetails()">
+            <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                    <img src="img/product/Picture13.jpg" class="w-100" alt="food">
+                    <ul class="star">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="add-to-cart">
+                      <a href="#">Add to Cart</a>
+                      <a href="#" class="heart-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="our-products.html">Advantix Over 25Kg</a>
+                <h6><del>320.00 L.E</del>250.00 L.E</h6>
+            </div>
+        </div>
+          <div class="col-lg-4 col-md-6" onclick="openDetails()">
+            <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                    <img src="img/product/Picture13.jpg" class="w-100" alt="food">
+                    <ul class="star">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="add-to-cart">
+                      <a href="#">Add to Cart</a>
+                      <a href="#" class="heart-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="our-products.html">Advantix Over 25Kg</a>
+                <h6><del>320.00 L.E</del>250.00 L.E</h6>
+            </div>
+        </div>
+          <div class="col-lg-4 col-md-6" onclick="openDetails()">
+            <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                    <img src="img/product/Picture13.jpg" class="w-100" alt="food">
+                    <ul class="star">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="add-to-cart">
+                      <a href="#">Add to Cart</a>
+                      <a href="#" class="heart-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="our-products.html">Advantix Over 25Kg</a>
+                <h6><del>320.00 L.E</del>250.00 L.E</h6>
+            </div>
+        </div>
+          <div class="col-lg-4 col-md-6" onclick="openDetails()">
+            <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                    <img src="img/product/Picture13.jpg" class="w-100" alt="food">
+                    <ul class="star">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="add-to-cart">
+                      <a href="#">Add to Cart</a>
+                      <a href="#" class="heart-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="our-products.html">Advantix Over 25Kg</a>
+                <h6><del>320.00 L.E</del>250.00 L.E</h6>
+            </div>
+        </div>
+          <div class="col-lg-4 col-md-6" onclick="openDetails()">
+            <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                    <img src="img/product/Picture13.jpg" class="w-100" alt="food">
+                    <ul class="star">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="add-to-cart">
+                      <a href="#">Add to Cart</a>
+                      <a href="#" class="heart-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="our-products.html">Advantix Over 25Kg</a>
+                <h6><del>320.00 L.E</del>250.00 L.E</h6>
+            </div>
+        </div>
+          <div class="col-lg-4 col-md-6" onclick="openDetails()">
+            <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                    <img src="img/product/Picture13.jpg" class="w-100" alt="food">
+                    <ul class="star">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="add-to-cart">
+                      <a href="#">Add to Cart</a>
+                      <a href="#" class="heart-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="our-products.html">Advantix Over 25Kg</a>
+                <h6><del>320.00 L.E</del>250.00 L.E</h6>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+      <div class="row gy-5">
+          <div class="col-xl-4 col-lg-6">
+              <div class="logo">
+                  <a href="index.html">
+                      <img src="img/logo.png" alt="logo" style="width: 60px;">
+                  </a>
+                  <p>At vero eos et accusam justo duo dolo res et ea rebum. Stet clita kasd guber gren. Aenean sollici tudin lorem qsben elit clita.</p>
+                  <div class="phone">
+                    <i class="fa-regular fa-envelope"></i>
+                        <a href="mallto:username@domain.com">username@domain.com</a>
+                  </div>
+                      <div class="phone d-flax align-items-center">
+                        <i class="fa-solid fa-location-dot" style="width: 50px;"></i>
+                        <p class="m-0 ">77 Al Fardes St. Ta-awanyat, Smouha, Alexandria</p>
+                      </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+              <div class="widget-title">
+                <h3>Quick Links</h3>
+                <div class="boder"></div>
+                  <ul>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Dog Boarding Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Cat Boarding Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Spa and Grooming Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Care for Puppy</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Service at a Resort</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Veterinary Service</a></li>
+                  </ul>
+                </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+              <div class="working-hours">
+                  <div class="widget-title">
+                    <h3>working hours</h3>
+                    <div class="boder"></div>
+                    <div class="working-time">
+                        <h6 class="pt-0">Sunday - Thursday <span>08AM - 10PM</span></h6>
+                        <div class="call-us">
+                            <img src="img/hadphon.png" alt="hadphon">
+                            <div>
+                                <a href="#">+20 111-547-7484</a>
+                                <span>Got Questions? Call us</span>
+                            </div>
+                        </div>
+                        <ul class="social-icon">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>© <span>SuperPet</span> 2024</p>
+          <div class="d-flex align-items-center gap-3">
+            <p>Designed and Developed by</p>
+            <a href="#"><img src="img/meetsupevents.png" style="width: 100px;" alt="cad"></a>
+          </div>
+      </div>
+  </div>
+  <img src="img/hero-bg-1.png" alt="hero-shaps" class="img-22">
+  <img src="img/hero-bg-2.png" alt="hero-shaps" class="img-33" style="left: 55%;">
+  <img src="img/hero-bg-1.png" alt="hero-shaps" class="img-44" style="left: -7%;">
+</footer>
+
+  <!-- START BOOTSTRAP JS FILE -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- START JQUIRY FILE -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 function openNav() {
   var opennav = document.getElementById("mySidenav");
   opennav.classList.toggle("active");
@@ -55,3 +56,8 @@ var x = setInterval(function() {
         document.getElementById("seconds").innerHTML = "0";
     }
 }, 1000);
+
+
+function openDetails() {
+    window.location.href = '/shop-details.html';
+}
