@@ -1,6 +1,6 @@
 
-@import 'css/helper-4.0.0.min.css';
-@import 'css/magnific-popup-1.1.0.min.css';
+@import '/css/helper-4.0.0.min.css';
+@import '/css/style.css';
 
 :root{
 	color-scheme: light only;
@@ -40,7 +40,7 @@
     }
 }
 .headerbg .navbar .navbar-nav .nav-item .nav-link {
-	font-size: 18px;
+	font-size: 20px;
 	padding: 0;
 	font-weight: 500;
 	color: #010f49;
@@ -67,6 +67,7 @@
 	width: 35px;
 	height: 35px;
 	line-height: 35px;
+	
 }
 .headerbg__topMenus{
 	margin-bottom: 15px;

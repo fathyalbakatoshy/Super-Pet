@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Start Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&family=DynaPuff:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Super Pet</title>
+</head>
+<body>
+  <div id="mySidenav" style="background: var(--main-color) !important;" class="sidenav bg-secondary text-white position-fixed h-100">
+    <a class="font-17 font-w700 m-4 d-flex justify-content-between align-items-center text-white" href="javascript:void(0)" onclick="openNav()">
+        <i class="fa fa-times mr-2"></i> <span>Close</span>
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop.html">Shop</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cats</a>
+        <ul class="dropdown-menu" style="transition: 0.3s;">
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dogs</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Birds</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Fish</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Reptile</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="p-4">
+        <div class="mb-2">
+            <form action="#">
+                <div class="row g-0">
+                    <div class="col-9">
+                        <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary btn-block rounded-start-0 d-flex align-items-center justify-content-center w-100 h-100" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+            Services
+        </a>
+        <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+            <i class="fa fa-user-circle me-2"></i>
+            Login / Signup
+        </a>
+        <a class="btn btn-primary position-relative d-flex align-items-center justify-content-between" href="#">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-shopping-bag me-2"></i>
+                Cart
+            </div>
+            <span class="text-white bg-secondary iconcart d-flex align-items-center justify-content-center rounded-circle" style="width: 25px; height: 25px;">4</span>
+        </a>
+
+    </div>
+    <div class="px-4 pb-4">
+        <ul class="d-flex mb-4 justify-content-around">
+            <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+            <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+            <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+            <li><a href="#" class="in fab fa-instagram"></a></li>
+            <li><a href="#" class="yt fab fa-youtube"></a></li>
+        </ul>
+    </div>
+</div>
+
+<header>
+  <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
+    <div class="container">
+      <div class="headertop__left d-flex align-items-center justify-content-between py-3">
+
+        
+      </div>
+    </div>
+  </div>
+  <div class="headerbg w-100">
+    <div class="container">
+      <nav class="navbar styledropdown navbar-expand-xl p-0">
+        <a class="navbar-brand position-relative p-0" href="#" aria-label="Super Pet">
+          <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
+        </a>
+
+        <div class="d-md-block d-lg-none">
+          <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
+        </div>
+        
+        <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
+          <div class="headerbg__topMenus flex-fill mb-1 w-100">
+            <div class="row align-items-center justify-content-between mb-3">
+              <div class="col-lg-4">
+                <form action="#">
+                  <div class="row g-0">
+                    <div class="col-9">
+                      <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                    </div>
+                    <div class="col-3">
+                      <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
+                  Services
+                </a>
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
+                  <i class="fa fa-user-circle me-2"></i>
+                  Login / Signup
+                </a>
+                <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#">
+                  <i class="fa fa-shopping-bag fs-4"></i>
+                  <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">4</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shop.html">Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown">
+                    <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Litter</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#"><span>Dogs  </i> <i class="fa-solid fa-chevron-down"></i></span></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="sharesocial d-flex">
+              <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+              <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+              <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+              <li><a href="#" class="in fab fa-instagram"></a></li>
+              <li><a href="#" class="yt fab fa-youtube"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero-shop">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Services</h2>
+        <div>
+          <a href="/index.html">Home</a>
+          /
+          <a href="/shop.html">Seriveces</a>
+          
+        </div>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="services py-5">
+  <div class="container">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-services-1-tab" data-bs-toggle="tab" data-bs-target="#nav-services-1" type="button" role="tab" aria-controls="nav-services-1" aria-selected="true">Boarding</button>
+      <button class="nav-link" id="nav-services-2-tab" data-bs-toggle="tab" data-bs-target="#nav-services-2" type="button" role="tab" aria-controls="nav-services-2" aria-selected="false">Grooming And Shower</button>
+      <button class="nav-link" id="nav-services-3-tab" data-bs-toggle="tab" data-bs-target="#nav-services-3" type="button" role="tab" aria-controls="nav-services-3" aria-selected="false">Licence</button>
+      <button class="nav-link" id="nav-services-4-tab" data-bs-toggle="tab" data-bs-target="#nav-services-4" type="button" role="tab" aria-controls="nav-services-4" aria-selected="false">Travelling</button>
+    </div>
+    <div class="tab-content pt-5" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-services-1" role="tabpanel" aria-labelledby="nav-services-1-tab" tabindex="0">
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="img/pet boarding.jpg" class="w-100 rounded-3 mb-5" alt="pet boarding">
+            <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Pet Boarding</h4>
+            <p style="font-size: 22px;">SUPER PET Boarding service is Here for your Cat to get an enjoyable Vacation Any Time, Under the Supervision of our Doctors your cat is safe with us!</p>
+          </div>
+          <div class="col-lg-5">
+            <div class=" bg-light p-4 p-lg-5">
+              <p class="font-22 text-secondary mb-3 font-w700 border-bottom pb-3 mb-3" style="color: var(--main-color) !important;">
+                Place your Appointment Now!
+              </p>
+              
+              <form action="#">
+                <div class="row row-p6 row-col">
+                  <!-- Your existing form elements -->
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control form-control-lg" placeholder="Owner's Name">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control form-control-lg" placeholder="Owner's ID">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control form-control-lg" placeholder="Boarding Period">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control form-control-lg" placeholder="Boarding Date">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p class="font-22 font-w500 mb-3 pb-3 border-bottom">
+                      Pet's Information
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                  </div>
+                  <div class="col-lg-3">
+                    <select class="form-select form-control form-control-lg mb-3" aria-label="Large select example">
+                      <option selected disabled>Sex</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Age">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control form-control-lg" placeholder="Last Fleas Medication">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control form-control-lg" placeholder="Last Deworming Medication">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control form-control-lg" placeholder="Medical History">
+                  </div>
+                  <div class="col-12">
+                    <p class="font-18 mb-2 font-w500">
+                      Behaviour to Other Cats:
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_cats_1" name="radio_behaviour_cats">
+                        <label class="custom-control-label" for="radio_behaviour_cats_1">
+                          Very Calm
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_cats_2" name="radio_behaviour_cats">
+                        <label class="custom-control-label" for="radio_behaviour_cats_2">
+                          Calm
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_cats_3" name="radio_behaviour_cats">
+                        <label class="custom-control-label" for="radio_behaviour_cats_3">
+                          Normal
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_cats_4" name="radio_behaviour_cats">
+                        <label class="custom-control-label" for="radio_behaviour_cats_4">
+                          Aggressive
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_cats_5" name="radio_behaviour_cats">
+                        <label class="custom-control-label" for="radio_behaviour_cats_5">
+                          Very Aggressive
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p class="font-18 mb-2 font-w500">
+                      Behaviour to Doctors:
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_doctors_1" name="radio_behaviour_doctors">
+                        <label class="custom-control-label" for="radio_behaviour_doctors_1">
+                          Normal
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_doctors_2" name="radio_behaviour_doctors">
+                        <label class="custom-control-label" for="radio_behaviour_doctors_2">
+                          Anti
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_behaviour_doctors_3" name="radio_behaviour_doctors">
+                        <label class="custom-control-label" for="radio_behaviour_doctors_3">
+                          Social
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p class="font-18 mb-2 font-w500">
+                      Preferred Food:
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_food_1" name="radio_food">
+                        <label class="custom-control-label" for="radio_food_1">
+                          Dry
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_food_2" name="radio_food">
+                        <label class="custom-control-label" for="radio_food_2">
+                          Soft
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio mr-3 mb-2">
+                        <input type="radio" class="custom-control-input" id="radio_food_3" name="radio_food">
+                        <label class="custom-control-label" for="radio_food_3">
+                          Other
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <input class="btn btn-secondary w-50 mx-auto d-block" type="submit" value="Submit Now">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <div class="note-box">
+                      <p>Note:</p>
+                      <ul>
+                        <li>Pet's Vaccination Booklet Must be Available and updated.</li>
+                        <li>No Pet Enter Boarding without Anti-fleas (max. 1 Month) and Deworming (max. 3 Months).</li>
+                        <li>*Otherwise we Give the recommended Doses before the Boarding Period*</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-services-2" role="tabpanel" aria-labelledby="nav-services-2-tab" tabindex="0">
+        <div class="row">
+          <div class="col-lg-7"><img src="img/Dog Grooming.jpg" class="w-100 rounded-3 mb-5" alt="Dog Grooming">
+            <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Grooming And Shower</h4>
+            <p style="font-size: 22px;">SUPER PET grooming team is here for your pet to do fresh hair cuts safely and be always on style! Also we have shower and medical shower to keep your pet always clean and protect them from ticks & fleas.. Place your appointment now!</p>
+          </div>
+          <div class="col-lg-5">
+            <div class=" bg-light p-4 p-lg-5">
+              <p class="font-22 text-secondary mb-3 font-w700 border-bottom pb-3 mb-3" style="color: var(--main-color) !important;">
+                Place your Appointment Now!
+              </p>
+              <form action="#">
+                <div class="row row-p6 row-col">
+                  <div class="col-12">
+                    <input type="text" class="form-control form-control-lg" placeholder="Owner's Name">
+                  </div>
+                  <div class="col-12 mt-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Pet's Name">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p class="font-18 font-w500 mb-3 pb-3 border-bottom">
+                      Pet Informations
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <select class="form-select form-control form-control-lg mb-3" aria-label="Large select example">
+                      <option selected disabled>Select Type</option>
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mt-3 mt-lg-0">
+                    <select class="form-select form-control form-control-lg mb-3" aria-label="Large select example">
+                      <option selected disabled>Select Sex</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Age">
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="History of Anesthesia">
+                  </div>
+                  <div class="col-12 mt-3">
+                    <select class="form-control form-control-lg">
+                      <option disabled selected>Temper Type</option>
+                      <option value="Very Calm">Very Calm</option>
+                      <option value="Calm">Calm</option>
+                      <option value="Normal">Normal</option>
+                      <option value="Aggressive">Aggressive</option>
+                      <option value="Very Aggressive">Very Aggressive</option>
+                    </select>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p class="font-18 font-w500 mb-3 pb-3 border-bottom">
+                      Service
+                    </p>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <div class="custom-control custom-checkbox mt-2">
+                      <input type="checkbox" class="custom-control-input" id="service_shower">
+                      <label class="custom-control-label" for="service_shower">Shower</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-2">
+                      <input type="checkbox" class="custom-control-input" id="service_medical_shower">
+                      <label class="custom-control-label" for="service_medical_shower">Medical Shower</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-2">
+                      <input type="checkbox" class="custom-control-input" id="service_grooming">
+                      <label class="custom-control-label" for="service_grooming">Grooming (Level 1 - Level 2 - Level 3)</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-2">
+                      <input type="checkbox" class="custom-control-input" id="service_custom_cut">
+                      <label class="custom-control-label" for="service_custom_cut">Customised Hair Cut And Clothes</label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p class="font-18 font-w500 mb-3 pb-3 border-bottom">
+                      Schedule Your Appointment
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="date" class="form-control form-control-lg" placeholder="Date">
+                  </div>
+                  <div class="col-lg-6 mt-3 mt-lg-0">
+                    <input type="time" class="form-control form-control-lg" placeholder="Time">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <input class="btn btn-secondary w-50 mx-auto d-block" type="submit" value="Submit Now">
+                  </div>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-services-3" role="tabpanel" aria-labelledby="nav-services-3-tab" tabindex="0">
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="img/dog licence.jpg" class="w-100 rounded-3 mb-5" alt="Dog Licence">
+            <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Dog Licence</h4>
+            <p style="font-size: 22px;">Your dog is safe with its licence. ORDER IT NOW!</p>
+          </div>
+          <div class="col-lg-5">
+            <div class=" bg-light p-4 p-lg-5">
+              <p class="font-22 text-secondary mb-3 font-w700 border-bottom pb-3 mb-3" style="color: var(--main-color) !important;">
+                Place your Appointment Now!
+              </p>
+              <form action="#">
+                <div class="row row-p6 row-col">
+                  <div class="col-12">
+                    <input type="text" class="form-control form-control-lg" placeholder="Owner's Name">
+                  </div>
+                  <div class="col-12 mt-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Owner's ID">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p class="font-18 font-w500 mb-3 pb-3 border-bottom">
+                      Pet Information
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                  </div>
+                  <div class="col-lg-6 mt-3 mt-lg-0">
+                    <input type="text" class="form-control form-control-lg" placeholder="Breed">
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Age">
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Colour">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p class="font-18 font-w500 mb-3 pb-3 border-bottom">
+                      Cost Information
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control form-control-lg" placeholder="COST">
+                  </div>
+                  <div class="col-lg-6 mt-3 mt-lg-0">
+                    <input type="text" class="form-control form-control-lg" placeholder="DEPOSIT">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <input class="btn btn-secondary w-50 mx-auto d-block" type="submit" value="Submit Now">
+                  </div>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-services-4" role="tabpanel" aria-labelledby="nav-services-4-tab" tabindex="0">
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="img/Dog travelling.jpg" class="w-100 rounded-3 mb-5" alt="Dog Travelling">
+            <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Pet Travelling</h4>
+            <p style="font-size: 22px;">Get your pet Travelling papers Done by one Click!</p>
+          </div>
+          <div class="col-lg-5">
+            <div class=" bg-light p-4 p-lg-5">
+
+              <form action="#">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="font-22 text-secondary mb-3 font-w700 border-bottom pb-3 mb-3" style="color: var(--main-color) !important;">
+                      Place your Appointment Now!
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <p class="font-18 font-w500 mb-2">by owner:</p>
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Full name">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Travelling date">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Country">
+                  </div>
+                  <div class="col-lg-6 form-section form-check-container">
+                    <select class="form-select form-control form-control-lg mb-3" aria-label="Large select example">
+                      <option selected disabled>Select Type</option>
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="number" class="form-control form-control-lg mb-3" placeholder="Age">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Birth date">
+                  </div>
+                  <div class="col-lg-6 form-section form-check-container">
+                    <select class="form-select form-control form-control-lg mb-3" aria-label="Large select example">
+                      <option selected disabled>Select Sex</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Breed">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Colour">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Pet name">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p class="font-18 font-w500 mb-2">by doctor:</p>
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <label for="rabies-vaccine" class="form-label">Rabies vaccine </label>
+                    <input type="text" class="form-control form-control-lg mb-3" id="rabies-vaccine">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <label for="date-last-token" class="form-label">Date of last one token</label>
+                    <input type="date" class="form-control form-control-lg mb-3" id="date-last-token">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <label for="batch-number" class="form-label">Batch number </label>
+                    <input type="text" class="form-control form-control-lg mb-3" id="batch-number">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <label for="expiry-date" class="form-label">Expiry date </label>
+                    <input type="date" class="form-control form-control-lg mb-3" id="expiry-date">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <label for="vaccine-type" class="form-label">Type of vaccine</label>
+                    <input type="text" class="form-control form-control-lg mb-3" id="vaccine-type">
+                  </div>
+                  <div class="col-lg-6 form-section">
+                    <label for="microchip-number" class="form-label">Microchip number</label>
+                    <input type="text" class="form-control form-control-lg mb-3" id="microchip-number">
+                  </div>
+                  <div class="col-12 mt-4">
+                    <input class="btn btn-secondary w-50 mx-auto d-block" type="submit" value="Submit Now">
+                  </div>
+                </div>
+              </form>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+      <div class="row gy-5">
+          <div class="col-xl-4 col-lg-6">
+              <div class="logo">
+                  <a href="index.html">
+                      <img src="img/logo.png" alt="logo" style="width: 60px;">
+                  </a>
+                  <p>At vero eos et accusam justo duo dolo res et ea rebum. Stet clita kasd guber gren. Aenean sollici tudin lorem qsben elit clita.</p>
+                  <div class="phone">
+                    <i class="fa-regular fa-envelope"></i>
+                        <a href="mallto:username@domain.com">username@domain.com</a>
+                  </div>
+                      <div class="phone d-flax align-items-center">
+                        <i class="fa-solid fa-location-dot" style="width: 50px;"></i>
+                        <p class="m-0 ">77 Al Fardes St. Ta-awanyat, Smouha, Alexandria</p>
+                      </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+              <div class="widget-title">
+                <h3>Quick Links</h3>
+                <div class="boder"></div>
+                  <ul>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Dog Boarding Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Cat Boarding Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Spa and Grooming Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Care for Puppy</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Service at a Resort</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Veterinary Service</a></li>
+                  </ul>
+                </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+              <div class="working-hours">
+                  <div class="widget-title">
+                    <h3>working hours</h3>
+                    <div class="boder"></div>
+                    <div class="working-time">
+                        <h6 class="pt-0">Sunday - Thursday <span>08AM - 10PM</span></h6>
+                        <div class="call-us">
+                            <img src="img/hadphon.png" alt="hadphon">
+                            <div>
+                                <a href="#">+20 111-547-7484</a>
+                                <span>Got Questions? Call us</span>
+                            </div>
+                        </div>
+                        <ul class="social-icon">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>© <span>SuperPet</span> 2024</p>
+          <div class="d-flex align-items-center gap-3">
+            <p>Designed and Developed by</p>
+            <a href="#"><img src="img/meetsupevents.png" style="width: 100px;" alt="cad"></a>
+          </div>
+      </div>
+  </div>
+  <img src="img/hero-bg-1.png" alt="hero-shaps" class="img-22">
+  <img src="img/hero-bg-2.png" alt="hero-shaps" class="img-33" style="left: 55%;">
+  <img src="img/hero-bg-1.png" alt="hero-shaps" class="img-44" style="left: -7%;">
+</footer>
+
+  <!-- START BOOTSTRAP JS FILE -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- START JQUIRY FILE -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/wow-1.3.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

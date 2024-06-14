@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Start Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&family=DynaPuff:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Super Pet</title>
+</head>
+<body>
+  <div id="mySidenav" style="background: var(--main-color) !important;" class="sidenav bg-secondary text-white position-fixed h-100">
+    <a class="font-17 font-w700 m-4 d-flex justify-content-between align-items-center text-white" href="javascript:void(0)" onclick="openNav()">
+        <i class="fa fa-times mr-2"></i> <span>Close</span>
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop.html">Shop</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cats</a>
+        <ul class="dropdown-menu" style="transition: 0.3s;">
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dogs</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Birds</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Fish</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Reptile</a>
+        <ul class="dropdown-menu" >
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Name Sub Menu</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="p-4">
+        <div class="mb-2">
+            <form action="#">
+                <div class="row g-0">
+                    <div class="col-9">
+                        <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary btn-block rounded-start-0 d-flex align-items-center justify-content-center w-100 h-100" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+            Services
+        </a>
+        <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
+            <i class="fa fa-user-circle me-2"></i>
+            Login / Signup
+        </a>
+        <a class="btn btn-primary position-relative d-flex align-items-center justify-content-between" href="#">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-shopping-bag me-2"></i>
+                Cart
+            </div>
+            <span class="text-white bg-secondary iconcart d-flex align-items-center justify-content-center rounded-circle" style="width: 25px; height: 25px;">4</span>
+        </a>
+
+    </div>
+    <div class="px-4 pb-4">
+        <ul class="d-flex mb-4 justify-content-around">
+            <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+            <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+            <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+            <li><a href="#" class="in fab fa-instagram"></a></li>
+            <li><a href="#" class="yt fab fa-youtube"></a></li>
+        </ul>
+    </div>
+</div>
+
+<header>
+  <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
+    <div class="container">
+      <div class="headertop__left d-flex align-items-center justify-content-between py-3">
+
+        
+      </div>
+    </div>
+  </div>
+  <div class="headerbg w-100">
+    <div class="container">
+      <nav class="navbar styledropdown navbar-expand-xl p-0">
+        <a class="navbar-brand position-relative p-0" href="#" aria-label="Super Pet">
+          <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
+        </a>
+
+        <div class="d-md-block d-lg-none">
+          <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
+        </div>
+        
+        <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
+          <div class="headerbg__topMenus flex-fill mb-1 w-100">
+            <div class="row align-items-center justify-content-between mb-3">
+              <div class="col-lg-4">
+                <form action="#">
+                  <div class="row g-0">
+                    <div class="col-9">
+                      <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                    </div>
+                    <div class="col-3">
+                      <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
+                  Services
+                </a>
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
+                  <i class="fa fa-user-circle me-2"></i>
+                  Login / Signup
+                </a>
+                <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#">
+                  <i class="fa fa-shopping-bag fs-4"></i>
+                  <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">4</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shop.html">Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown">
+                    <a href="#"><span>Cat Adult</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Cat Kitten</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Litter</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#"><span>Dogs  </i> <i class="fa-solid fa-chevron-down"></i></span></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Adult</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Puppy</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="sharesocial d-flex">
+              <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+              <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+              <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+              <li><a href="#" class="in fab fa-instagram"></a></li>
+              <li><a href="#" class="yt fab fa-youtube"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero-shop">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Contact Us</h2>
+        <div>
+          <a href="/index.html">Home</a>
+          /
+          <a href="/contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16231.270503542724!2d29.932406930748407!3d31.21506893194095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4919c447a91%3A0xd0f971e233ebf6c9!2sSmouha%2C%20Ezbet%20Saad%2C%20Sidi%20Gaber%2C%20Alexandria%20Governorate%205432062!5e0!3m2!1sen!2seg!4v1718223968197!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-light p-3">
+          <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+            <div class="col-3">
+              <i class="fab fa-whatsapp font-16 font-md-30 colorsocial wh img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+            </div>
+            <div class="col-9">
+              <a class="font-w500 font-18 font-md-18" href="tel:+201115477484">
+                <span class="text-ltr d-block">
+                  +201115477484
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+            <div class="col-3">
+              <i class="fa fa-phone font-16 font-md-30 bg-secondary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+            </div>
+            <div class="col-9">
+              <a class="font-w500 font-18 font-md-18" href="tel:+201115477484">
+                <span class="text-ltr d-block">
+                  +201115477484
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+            <div class="col-3">
+              <i class="fa fa-teletype font-16 font-md-30 bg-secondary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+            </div>
+            <div class="col-9">
+              <a class="font-w500 font-18 font-md-18" href="tel:034254669">
+                <span class="text-ltr d-block">
+                  034254669
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+            <div class="col-3">
+              <i class="fa fa-envelope font-16 font-md-30 bg-primary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+            </div>
+            <div class="col-9">
+              <a class="font-w500 font-15 font-md-18" href="mailto:emailname@sitename.com">emailname@sitename.com</a>
+            </div>
+          </div>
+          <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+            <div class="col-3">
+              <i class="fa fa-map-marker-alt font-16 font-md-30 bg-primary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+            </div>
+            <div class="col-9">
+              <p class="font-16 line-12 mb-0">
+                77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="row mt-5 column-reverse">
+          <div class="col-lg-6">
+            <div class="bg-light p-3">
+              <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+                <div class="col-3">
+                  <i class="fab fa-whatsapp font-16 font-md-30 colorsocial wh img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+                </div>
+                <div class="col-9">
+                  <a class="font-w500 font-18 font-md-18" href="tel:+201115477484">
+                    <span class="text-ltr d-block">
+                      +201115477484
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+                <div class="col-3">
+                  <i class="fa fa-phone font-16 font-md-30 bg-secondary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+                </div>
+                <div class="col-9">
+                  <a class="font-w500 font-18 font-md-18" href="tel:+201115477484">
+                    <span class="text-ltr d-block">
+                      +201115477484
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+                <div class="col-3">
+                  <i class="fa fa-teletype font-16 font-md-30 bg-secondary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+                </div>
+                <div class="col-9">
+                  <a class="font-w500 font-18 font-md-18" href="tel:034254669">
+                    <span class="text-ltr d-block">
+                      034254669
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+                <div class="col-3">
+                  <i class="fa fa-envelope font-16 font-md-30 bg-primary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+                </div>
+                <div class="col-9">
+                  <a class="font-w500 font-15 font-md-18" href="mailto:emailname@sitename.com">emailname@sitename.com</a>
+                </div>
+              </div>
+              <div class="row row-p8 row-col align-items-center mb-3 wow fadeInUp">
+                <div class="col-3">
+                  <i class="fa fa-map-marker-alt font-16 font-md-30 bg-primary text-white img-h50 img-md-h60 rounded-circle text-center d-block mx-auto d-flex align-items-center justify-content-center"></i>
+                </div>
+                <div class="col-9">
+                  <p class="font-16 line-12 mb-0">
+                    77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16231.270503542724!2d29.932406930748407!3d31.21506893194095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4919c447a91%3A0xd0f971e233ebf6c9!2sSmouha%2C%20Ezbet%20Saad%2C%20Sidi%20Gaber%2C%20Alexandria%20Governorate%205432062!5e0!3m2!1sen!2seg!4v1718223968197!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+    
+        </div>
+
+  <div class="row mt-5">
+    <div class="col-lg-12">
+      <div class="bg-light p-4 p-lg-5 rounded-lg">
+        <div class="mb-3 wow fadeInUp">
+          <label class="mb-0 d-block">
+            <p class="font-16 mb-24">
+              Name: <span class="text-danger">*</span>
+            </p>
+            <input type="text" class="form-control form-control-lg" placeholder="">
+          </label>
+        </div>
+        <div class="mb-3 wow fadeInUp">
+          <label class="mb-0 d-block">
+            <p class="font-16 mb-24">
+              Email: <span class="text-danger">*</span>
+            </p>
+            <input type="text" class="form-control form-control-lg" placeholder="">
+          </label>
+        </div>
+        <div class="mb-3 wow fadeInUp">
+          <label class="mb-0 d-block">
+            <p class="font-16 mb-24">
+              Subject: <span class="text-danger">*</span>
+            </p>
+            <input type="text" class="form-control form-control-lg" placeholder="">
+          </label>
+        </div>
+        <div class="mb-3 wow fadeInUp">
+          <label class="mb-0 d-block">
+            <p class="font-16 mb-24">
+              Message: <span class="text-danger">*</span>
+            </p>
+            <textarea rows="6" class="form-control form-control-lg" placeholder=""></textarea>
+          </label>
+        </div>
+        <div class="mt-4 wow fadeInUp">
+          <input class="btn btn-primary btn-lg px-4" type="submit" value="Send Message">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="container">
+      <div class="row gy-5">
+          <div class="col-xl-4 col-lg-6">
+              <div class="logo">
+                  <a href="index.html">
+                      <img src="img/logo.png" alt="logo" style="width: 60px;">
+                  </a>
+                  <p>At vero eos et accusam justo duo dolo res et ea rebum. Stet clita kasd guber gren. Aenean sollici tudin lorem qsben elit clita.</p>
+                  <div class="phone">
+                    <i class="fa-regular fa-envelope"></i>
+                        <a href="mallto:username@domain.com">username@domain.com</a>
+                  </div>
+                      <div class="phone d-flax align-items-center">
+                        <i class="fa-solid fa-location-dot" style="width: 50px;"></i>
+                        <p class="m-0 ">77 Al Fardes St. Ta-awanyat, Smouha, Alexandria</p>
+                      </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+              <div class="widget-title">
+                <h3>Quick Links</h3>
+                <div class="boder"></div>
+                  <ul>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Dog Boarding Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Cat Boarding Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Spa and Grooming Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Care for Puppy</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Service at a Resort</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Veterinary Service</a></li>
+                  </ul>
+                </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+              <div class="working-hours">
+                  <div class="widget-title">
+                    <h3>working hours</h3>
+                    <div class="boder"></div>
+                    <div class="working-time">
+                        <h6 class="pt-0">Sunday - Thursday <span>08AM - 10PM</span></h6>
+                        <div class="call-us">
+                            <img src="img/hadphon.png" alt="hadphon">
+                            <div>
+                                <a href="#">+20 111-547-7484</a>
+                                <span>Got Questions? Call us</span>
+                            </div>
+                        </div>
+                        <ul class="social-icon">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>© <span>SuperPet</span> 2024</p>
+          <div class="d-flex align-items-center gap-3">
+            <p>Designed and Developed by</p>
+            <a href="#"><img src="img/meetsupevents.png" style="width: 100px;" alt="cad"></a>
+          </div>
+      </div>
+  </div>
+  <img src="img/hero-bg-1.png" alt="hero-shaps" class="img-22">
+  <img src="img/hero-bg-2.png" alt="hero-shaps" class="img-33" style="left: 55%;">
+  <img src="img/hero-bg-1.png" alt="hero-shaps" class="img-44" style="left: -7%;">
+</footer>
+
+  <!-- START BOOTSTRAP JS FILE -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- START JQUIRY FILE -->
+  <script src="js/wow-1.3.0.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

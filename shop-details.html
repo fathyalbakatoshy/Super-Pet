@@ -12,16 +12,18 @@
     href="https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&family=DynaPuff:wght@400..700&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <title>Super Pet</title>
 </head>
 <body>
   <div id="mySidenav" style="background: var(--main-color) !important;" class="sidenav bg-secondary text-white position-fixed h-100">
-    <a class="font-17 font-w700 m-4 d-block text-white" href="javascript:void(0)" onclick="openNav()">
-        <i class="fa fa-times mr-2"></i> Close
+    <a class="font-17 font-w700 m-4 d-flex justify-content-between align-items-center text-white" href="javascript:void(0)" onclick="openNav()">
+        <i class="fa fa-times mr-2"></i> <span>Close</span>
     </a>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/shop.html">Shop</a>
@@ -129,7 +131,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
       </li>
     </ul>
     <div class="p-4">
@@ -161,16 +163,7 @@
             </div>
             <span class="text-white bg-secondary iconcart d-flex align-items-center justify-content-center rounded-circle" style="width: 25px; height: 25px;">4</span>
         </a>
-        <div class="mt-4">
-            <p class="mb-2 line-12 d-flex gap-3 align-items-center">
-                <i class="fa fa-3 text-center font-20 fa-map-marker-alt text-primary mr-24" style="font-size: 24px; color: #b9d432 !important;"></i>
-                77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
-            </p>
-            <a class="gap-3 mb-0 line-12 d-flex align-items-center" href="tel:+201115477484" >
-                <i class="fa fa-30 text-center font-20 fa-phone text-primary mr-24" style="font-size: 24px; color: #b9d432 !important;"></i>
-                +201115477484
-            </a>
-        </div>
+
     </div>
     <div class="px-4 pb-4">
         <ul class="d-flex mb-4 justify-content-around">
@@ -186,21 +179,9 @@
 <header>
   <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
     <div class="container">
-      <div class="headertop__left d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center gap-4">
-          <p class="font-17 mb-0 text-center gap-3 d-flex align-items-center mr-4">
-            <i class="fa fa-map-marker-alt mr-24"></i>
-            77 Al Fardes St. Ta-awanyat, Smouha, Alexandria
-          </p>
-          <a class="font-17 mb-0 text-center gap-3 d-flex align-items-center" href="tel:+201115477484">
-            <i class="fa fa-phone mr-24"></i>
-            +20 111-547-7484
-          </a>
-        </div>
-        <a class="btn btn-secondary d-flex align-items-center" href="#">
-          <i class="fa fa-globe mr-2"></i>
-          عربي
-        </a>
+      <div class="headertop__left d-flex align-items-center justify-content-between py-3">
+
+        
       </div>
     </div>
   </div>
@@ -216,7 +197,7 @@
         </div>
         
         <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
-          <div class="headerbg__topMenus flex-fill w-100">
+          <div class="headerbg__topMenus flex-fill mb-1 w-100">
             <div class="row align-items-center justify-content-between mb-3">
               <div class="col-lg-4">
                 <form action="#">
@@ -233,7 +214,7 @@
                 </form>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-end">
-                <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
                   Services
                 </a>
                 <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
@@ -248,7 +229,7 @@
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between w-100">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav align-items-center">
               <li class="nav-item">
                 <a class="nav-link" href="/index.html">Home</a>
               </li>
@@ -256,107 +237,135 @@
                 <a class="nav-link" href="/shop.html">Shop</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Cats</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown">
+                    <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  <li class="dropdown">
+                    <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Litter</a></li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#"><span>Dogs  </i> <i class="fa-solid fa-chevron-down"></i></span></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
                   </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Dogs</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
+                <ul >
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                      <li><a href="#">Treats</a></li>
+                      <li><a href="#">Supplements</a></li>
+                      <li><a href="#">Special Diets</a></li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Birds</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Fish</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#">Reptile</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Name Sub Menu</a>
+                  <li class="dropdown">
+                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                    <ul>
+                      <li><a href="#">Toys</a></li>
+                      <li><a href="#">Beds</a></li>
+                      <li><a href="#">Collars</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Leashes</a></li>
+                    </ul>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="/contact.html">Contact</a>
               </li>
             </ul>
             <ul class="sharesocial d-flex">
@@ -395,7 +404,7 @@
 
 <section class="shop-details">
   <div class="container py-5">
-    <div class="row gy-4 product-info-section">
+    <div class="row gb-4 product-info-section">
       <div class="col-lg-7">
         <div class="pd-gallery d-flex">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -463,9 +472,15 @@
             </span>
             <h6><span>In stock</span></h6>
             </div>
-            <div class="quantity">
+            <div class="quantity gap-3">
                   <h6>Quantity</h6>
-              <input type="number" class="input-text" step="1" min="1" name="quantity" value="1">
+                    <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center">
+                      <span id="increment" class="" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
+                      <input type="number" disabled id="quantity" step="1" min="1" value="1">
+                      <span id="decrement" class="" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+
+                    </div>
+                  </div>
                 </div>
                 <div class="add-to-cart">
                           <a href="#" class="button">Add to Cart</a>
@@ -497,55 +512,17 @@
 </section>
 
 
-<section class="information mt-70">
-  <div class="container">
-    <h3>Nutritional Info</h3>
-    <div class="boder-bar"></div>
-    <ul class="specification">
-      <li><h6>Vitamin E</h6>100 IU/kg</li>
-      <li><h6>Glucosamine</h6>350 mg/kg*</li>
-      <li><h6>Crude Protein</h6>21.0%</li>
-      <li><h6>Moisture </h6>12.0%</li>
-    </ul>
-  </div>
-</section>
 
-<section class="information mt-70">
+
+<section class="information">
   <div class="container">
-    <h3>Feeding Guidelines</h3>
-    <div class="boder-bar"></div>
-    <div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Weight of Dog</th>
-        <th scope="col">Cups Per Day</th>
-        <th scope="col">Mix With Pouch</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="noBorder">Up to 10 lb</td>
-        <td class="noBorder">1 to 2</td>
-        <td class="noBorder">3.5 oz of PEDIGREE® Pouch</td>
-      </tr>
-      <tr>
-        <td class="noBorder">10 to 25</td>
-        <td class="noBorder">2 to 3</td>
-        <td class="noBorder">3.5 oz of PEDIGREE</td>
-      </tr>
-      <tr>
-        <td class="noBorder">50 to 75</td>
-        <td class="noBorder">1 to 2</td>
-        <td class="noBorder"></td>
-      </tr>
-      <tr>
-        <td class="noBorder">75 to 150</td>
-        <td class="noBorder">2 to 3</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+    <div class="row product-info-section">
+      <div class="col-lg-12">
+        <h3>Description</h3>
+        <div class="boder-bar"></div>
+        <p>At elementum eu facilisis sed odio morbi quis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Porttitor leo a diam sollicitudin tempor. Platea dictumst vestibulum rhoncus est pellentesque elit. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus.        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -576,7 +553,7 @@
                     </div>
                     <span>Animal Feed</span>
                     <a href="#">Procan Adult Dog Food</a>
-                    <h6>$32.00</h6>
+                    <h6>310 L.E</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -599,7 +576,7 @@
                     </div>
                     <span>Animal Feed</span>
                     <a href="#">Best Organic Feeds</a>
-                    <h6><del>$32.00</del>$22.00</h6>
+                    <h6>310 L.E</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -622,7 +599,7 @@
                     </div>
                     <span>Animal Feed</span>
                     <a href="#">Green Papaya Fruit</a>
-                    <h6>$32.00</h6>
+                    <h6>310 L.E</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -645,7 +622,7 @@
                     </div>
                     <span>Animal Feed</span>
                     <a href="#">KMR Pwdr 12oz</a>
-                    <h6><del>$32.00</del>$22.00</h6>
+                    <h6>310 L.E</h6>
                 </div>
             </div>
         </div>
@@ -727,7 +704,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- START JQUIRY FILE -->
   <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/wow-1.3.0.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="shop.js"></script>
 </body>
 </html>
