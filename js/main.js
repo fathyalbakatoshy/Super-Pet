@@ -10,6 +10,13 @@ function openNav() {
   }
 }
 
+function toggleDropdown(id) {
+  var element = document.getElementById(id);
+  element.classList.toggle("show");
+}
+
+
+
 document.addEventListener("keyup", function (event) {
   if (event.key === "Escape") {
     document.body.classList.remove("stop");
@@ -67,23 +74,23 @@ function openDetails() {
   window.location.href = '/shop-details.html';
 }
 
-function incrementValue() {
-  let quantity = document.getElementById('quantity');
-  if (quantity) {
-    let currentValue = parseInt(quantity.value);
-    quantity.value = currentValue + 1;
-  }
-}
+// function incrementValue() {
+//   let quantity = document.getElementById('quantity');
+//   if (quantity) {
+//     let currentValue = parseInt(quantity.value);
+//     quantity.value = currentValue + 1;
+//   }
+// }
 
-function decrementValue() {
-  let quantity = document.getElementById('quantity');
-  if (quantity) {
-    let currentValue = parseInt(quantity.value);
-    if (currentValue > 1) {
-      quantity.value = currentValue - 1;
-    }
-  }
-}
+// function decrementValue() {
+//   let quantity = document.getElementById('quantity');
+//   if (quantity) {
+//     let currentValue = parseInt(quantity.value);
+//     if (currentValue > 1) {
+//       quantity.value = currentValue - 1;
+//     }
+//   }
+// }
 
 new WOW().init();
 
@@ -108,3 +115,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+let scrollBtn = document.getElementById('scrollTopBtn')
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollBtn.style.display = "flex";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function incrementValue() {
+  var value = parseInt(document.getElementById('quantity').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('quantity').value = value;
+}
+
+function decrementValue() {
+  var value = parseInt(document.getElementById('quantity').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('quantity').value = value;
+}
