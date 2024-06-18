@@ -161,218 +161,202 @@
     </div>
 
       <div id="sidebody" onclick="openNav()" ></div>
-        <header>
-        <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
-          <div class="container">
-            <div class="headertop__left d-flex align-items-center justify-content-between py-3">
 
-              
-            </div>
-          </div>
-        </div>
-        <div class="headerbg w-100">
-          <div class="container">
-            <nav class="navbar styledropdown navbar-expand-xl">
-              <a class="navbar-brand position-relative p-0" href="/index.html" aria-label="Super Pet">
-                <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
-              </a>
 
-              <a class="btn btn-secondary position-relative d-flex align-items-center gap-1 d-lg-none" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <i class="fa fa-shopping-bag fs-4"></i>
-                <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
-              </a>
-
-              
-
-              <div class="d-md-block d-lg-none">
-                <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
-              </div>
-              
-              <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
-                <div class="headerbg__topMenus flex-fill mb-1 w-100">
-                  <div class="row align-items-center justify-content-between mb-3">
-                    <div class="col-lg-4">
-                      <form action="#">
-                        <div class="row g-0">
-                          <div class="col-9">
-                            <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
-                          </div>
-                          <div class="col-3">
-                            <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
-                              <i class="fa fa-search"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
+    <header>
+      <div class="container">
+        <nav class="d-flex align-items-center p-2 py-3">
+          <a href="/index.html">
+            <img src="img/logo.png" alt="Pet">
+          </a>
+          <div class="d-flex flex-column flex-grow-1">
+            
+              <div class="search-btn d-flex justify-content-between align-items-center mb-2">
+                <div class="search col-lg-4">
+                  <form action="#">
+                    <div class="row g-0">
+                      <div class="col-9">
+                        <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
+                      </div>
+                      <div class="col-3">
+                        <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center justify-content-end">
-                      <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
-                        Services
-                      </a>
-                      <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
-                        <i class="fa fa-user-circle me-2"></i>
-                        Login / Signup
-                      </a>
-                      <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <i class="fa fa-shopping-bag fs-4"></i>
-                        <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
-                      </a>
-                    </div>
-                  </div>
+                  </form>
                 </div>
-                <div class="d-flex align-items-center justify-content-between w-100">
-                  <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
-                      <ul>
-                        <li class="dropdown">
-                          <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Litter</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                      <a href="#"><span>Dogs</span> <i class="fa-solid fa-chevron-down"></i></a>
-                      <ul >
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                      <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
-                      <ul >
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                      <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
-                      <ul >
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
-                      <ul >
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact.html">Contact</a>
-                    </li>
-                  </ul>
-                  <ul class="sharesocial d-flex">
-                    <li><a href="#" class="fb fab fa-facebook-f"></a></li>
-                    <li><a href="#" class="twx fab fa-x-twitter"></a></li>
-                    <li><a href="#" class="li fab fa-linkedin-in"></a></li>
-                    <li><a href="#" class="in fab fa-instagram"></a></li>
-                    <li><a href="#" class="yt fab fa-youtube"></a></li>
-                  </ul>
+                <div class="col-lg-8 d-flex align-items-center justify-content-end">
+                  <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
+                    Services
+                  </a>
+                  <a class="btn btn-secondary me-2 d-flex align-items-center justify-content-center" href="#">
+                    <i class="fa fa-user-circle me-lg-2"></i>
+                    <span class="d-none d-lg-block">Login / Signup</span>
+                  </a>
+                  <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa fa-shopping-bag fs-5"></i>
+                    <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
+                  </a>
                 </div>
               </div>
-            </nav>
+              <div class="links d-flex align-items-center justify-content-between w-100">
+                <ul class="navbar-nav align-items-center flex-row">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                      <li class="dropdown">
+                        <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Dry Food</a></li>
+                          <li><a href="#">Wet Food</a></li>
+                          <li><a href="#">Treats</a></li>
+                          <li><a href="#">Supplements</a></li>
+                          <li><a href="#">Special Diets</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Toys</a></li>
+                          <li><a href="#">Beds</a></li>
+                          <li><a href="#">Collars</a></li>
+                          <li><a href="#">Grooming</a></li>
+                          <li><a href="#">Litter</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a href="#"><span>Dogs</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul >
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Dry Food</a></li>
+                          <li><a href="#">Wet Food</a></li>
+                          <li><a href="#">Treats</a></li>
+                          <li><a href="#">Supplements</a></li>
+                          <li><a href="#">Special Diets</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Toys</a></li>
+                          <li><a href="#">Beds</a></li>
+                          <li><a href="#">Collars</a></li>
+                          <li><a href="#">Grooming</a></li>
+                          <li><a href="#">Leashes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
+                    <ul >
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Dry Food</a></li>
+                          <li><a href="#">Wet Food</a></li>
+                          <li><a href="#">Treats</a></li>
+                          <li><a href="#">Supplements</a></li>
+                          <li><a href="#">Special Diets</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Toys</a></li>
+                          <li><a href="#">Beds</a></li>
+                          <li><a href="#">Collars</a></li>
+                          <li><a href="#">Grooming</a></li>
+                          <li><a href="#">Leashes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+  
+                  <li class="nav-item dropdown">
+                    <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul >
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Dry Food</a></li>
+                          <li><a href="#">Wet Food</a></li>
+                          <li><a href="#">Treats</a></li>
+                          <li><a href="#">Supplements</a></li>
+                          <li><a href="#">Special Diets</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                          <li><a href="#">Toys</a></li>
+                          <li><a href="#">Beds</a></li>
+                          <li><a href="#">Collars</a></li>
+                          <li><a href="#">Grooming</a></li>
+                          <li><a href="#">Leashes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul >
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></i></a>
+                        <ul>
+                          <li><a href="#">Dry Food</a></li>
+                          <li><a href="#">Wet Food</a></li>
+                          <li><a href="#">Treats</a></li>
+                          <li><a href="#">Supplements</a></li>
+                          <li><a href="#">Special Diets</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></i></a>
+                        <ul>
+                          <li><a href="#">Toys</a></li>
+                          <li><a href="#">Beds</a></li>
+                          <li><a href="#">Collars</a></li>
+                          <li><a href="#">Grooming</a></li>
+                          <li><a href="#">Leashes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                  </li>
+                </ul>
+                <ul class="sharesocial d-flex">
+                  <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+                  <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+                  <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+                  <li><a href="#" class="in fab fa-instagram"></a></li>
+                  <li><a href="#" class="yt fab fa-youtube"></a></li>
+                </ul>
+              </div>
           </div>
-        </div>
-      </header>
+          <div class="d-md-block d-lg-none ms-3">
+            <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
       <aside>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header justify-content-end">
@@ -621,7 +605,7 @@
   </div>
 </div>
 
-  <section class="product py-5  wow animate__animated">
+  <section class="product py-5  wow animate__fadeInUp">
     <div class="container">
       <div class="header text-center">
         <img src="img/header-img.png" width="66" style="padding-bottom: 16px;" alt="">
@@ -631,7 +615,7 @@
 
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture1.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -654,7 +638,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture2.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -677,7 +661,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture3.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -700,7 +684,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture4.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -723,7 +707,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture5.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -746,7 +730,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture6.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -769,7 +753,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture7.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -792,7 +776,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="healthy-product wow animate__animated ">
+          <div class="healthy-product wow animate__fadeInUp ">
             <div class="healthy-product-img">
                 <img src="img/product/Picture8.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -815,7 +799,7 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="healthy-product mb-lg-0">
+          <div class="healthy-product mb-lg-0 wow animate__fadeInUp">
               <div class="healthy-product-img">
                   <img src="img/product/Picture13.jpg" class="w-100" alt="food">
                   <ul class="star">
@@ -839,7 +823,7 @@
       </div>
       <div class="col-lg-9">
         <div class="deal-of-the-week">
-            <div class="healthy-product-img">
+            <div class="healthy-product-img ">
                 <h6>Deal of the Week</h6>
                 <img src="img/product/Picture12.jpg" class="w-100" alt="food">
                 <ul class="star">
@@ -850,7 +834,7 @@
                     <li><i class="fa-solid fa-star"></i></li>
                 </ul>
             </div>
-            <div class="healthy-product wow animate__animated ">
+            <div class="healthy-product wow animate__fadeInUp ">
                 <span>Animal Feed</span>
                 <a href="our-products.html">Advocate 25kg - 40kg </a>
               <div>
@@ -879,7 +863,7 @@
 
     </div>
   </section>
-  <div class="blog py-5  wow animate__animated">
+  <div class="blog py-5  wow animate__fadeInUp">
     <div class="container">
       <div class="header text-center">
           <img src="img/header-img.png" alt="heading-img">
@@ -887,7 +871,7 @@
           <h2>Recent Articles</h2>
       </div>
       <div class="row">
-          <div class="col-lg-4 col-md-6 wow animate__animated">
+          <div class="col-lg-4 col-md-6 wow animate__fadeInUp">
               <div class="blog-style">
                   <figure>
                       <img src="img/blog-2.jpg" alt="img">
@@ -900,7 +884,7 @@
                   </div>
               </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow animate__animated">
+          <div class="col-lg-4 col-md-6 wow animate__fadeInUp">
               <div class="blog-style">
                   <figure>
                       <img src="img/blog-3.jpg" alt="img">
@@ -913,7 +897,7 @@
                   </div>
               </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow animate__animated">
+          <div class="col-lg-4 col-md-6 wow animate__fadeInUp">
               <div class="blog-style">
                   <figure>
                       <img src="img/blog-1.jpg" alt="img">
@@ -930,7 +914,7 @@
   </div>
   </div>
 
-  <section class="py-5 no-top  wow animate__animated">
+  <section class="py-5 no-top  wow animate__fadeInUp">
     <div class="container  text-center text-md-start ">
         <div class="header text-center">
           <img src="img/header-img.png" width="66" style="padding-bottom: 16px;" alt="">
@@ -1014,7 +998,7 @@
     </div>
 </section>
 
-  <div class="svgblock2  wow animate__animated">
+  <div class="svgblock2  wow animate__fadeInUp">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
 					<path style="transform: translateY(1px);" d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z"></path>
 				</svg>

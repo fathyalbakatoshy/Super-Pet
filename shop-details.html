@@ -153,174 +153,18 @@
     </div>
 </div>
 
-<div id="mySidenav" style="background: var(--main-color) !important;" class="sidenav bg-secondary text-white position-fixed h-100">
-  <a class="font-17 font-w700 m-4 d-flex justify-content-between align-items-center text-white" href="javascript:void(0)" onclick="openNav()">
-      <i class="fa fa-times mr-2"></i> <span>Close</span>
-  </a>
-  <ul class="navbar-nav">
-      <li class="nav-item">
-          <a class="nav-link" href="/index.html">Home</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="/shop.html">Shop</a>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsDropdown')">Cats</a>
-          <ul class="dropdown-menu" id="catsDropdown">
-              <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown1')">Cats Food</a>
-                  <ul class="dropdown-menu" id="catsSubDropdown1">
-                      <li><a class="dropdown-item" href="#">Dry Food</a></li>
-                      <li><a class="dropdown-item" href="#">Wet Food</a></li>
-                      <li><a class="dropdown-item" href="#">Treats</a></li>
-                      <li><a class="dropdown-item" href="#">Supplements</a></li>
-                      <li><a class="dropdown-item" href="#">Special Diets</a></li>
-                  </ul>
-              </li>
-              <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown2')">Cat Accessories</a>
-                  <ul class="dropdown-menu" id="catsSubDropdown2">
-                      <li><a class="dropdown-item" href="#">Toys</a></li>
-                      <li><a class="dropdown-item" href="#">Beds</a></li>
-                      <li><a class="dropdown-item" href="#">Collars</a></li>
-                      <li><a class="dropdown-item" href="#">Grooming</a></li>
-                      <li><a class="dropdown-item" href="#">Litter</a></li>
-                  </ul>
-              </li>
-              
-          </ul>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsDropdown')">Dogs</a>
-          <ul class="dropdown-menu" id="dogsDropdown">
-              <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown1')">Dogs Food</a>
-                  <ul class="dropdown-menu" id="dogsSubDropdown1">
-                    <li><a class="dropdown-item" href="#">Dry Food</a></li>
-                    <li><a class="dropdown-item" href="#">Wet Food</a></li>
-                    <li><a class="dropdown-item" href="#">Treats</a></li>
-                    <li><a class="dropdown-item" href="#">Supplements</a></li>
-                    <li><a class="dropdown-item" href="#">Special Diets</a></li>
-                  </ul>
-              </li>
-              <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown2')">Cat Accessories</a>
-                  <ul class="dropdown-menu" id="dogsSubDropdown2">
-                    <li><a class="dropdown-item" href="#">Toys</a></li>
-                    <li><a class="dropdown-item" href="#">Beds</a></li>
-                    <li><a class="dropdown-item" href="#">Collars</a></li>
-                    <li><a class="dropdown-item" href="#">Grooming</a></li>
-                    <li><a class="dropdown-item" href="#">Litter</a></li>
-                  </ul>
-              </li>
-          </ul>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('birdsDropdown')">Birds</a>
-          <ul class="dropdown-menu" id="birdsDropdown">
-              <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-              <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('birdsSubDropdown1')">Name Sub Menu</a>
-                  <ul class="dropdown-menu" id="birdsSubDropdown1">
-                      <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                      <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                  </ul>
-              </li>
-              <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-          </ul>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('fishDropdown')">Fish</a>
-          <ul class="dropdown-menu" id="fishDropdown">
-              <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-              <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('fishSubDropdown1')">Name Sub Menu</a>
-                  <ul class="dropdown-menu" id="fishSubDropdown1">
-                      <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                      <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                  </ul>
-              </li>
-              <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-          </ul>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('reptileDropdown')">Reptile</a>
-          <ul class="dropdown-menu" id="reptileDropdown">
-              <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-              <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('reptileSubDropdown1')">Name Sub Menu</a>
-                  <ul class="dropdown-menu" id="reptileSubDropdown1">
-                      <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                      <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                  </ul>
-              </li>
-              <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-          </ul>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="/contact.html">Contact</a>
-      </li>
-  </ul>
-  <div class="p-4">
-      <div class="mb-2">
-          <form action="#">
-              <div class="row g-0">
-                  <div class="col-9">
-                      <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
-                  </div>
-                  <div class="col-3">
-                      <button class="btn btn-primary btn-block rounded-start-0 d-flex align-items-center justify-content-center w-100 h-100" type="submit">
-                          <i class="fa fa-search"></i>
-                      </button>
-                  </div>
-              </div>
-          </form>
-      </div>
-      <a class="btn btn-primary mb-2 d-flex align-items-center" href="/service.html">
-          Services
-      </a>
-      <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
-          <i class="fa fa-user-circle me-2"></i>
-          Login / Signup
-      </a>
+  <div id="sidebody" onclick="openNav()" ></div>
 
-  </div>
-  <div class="px-4 pb-4">
-      <ul class="d-flex mb-4 justify-content-around">
-          <li><a href="#" class="fb fab fa-facebook-f"></a></li>
-          <li><a href="#" class="twx fab fa-x-twitter"></a></li>
-          <li><a href="#" class="li fab fa-linkedin-in"></a></li>
-          <li><a href="#" class="in fab fa-instagram"></a></li>
-          <li><a href="#" class="yt fab fa-youtube"></a></li>
-      </ul>
-  </div>
-</div>
-
-<div id="sidebody" onclick="openNav()" ></div>
   <header>
-  <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
     <div class="container">
-      <div class="headertop__left d-flex align-items-center justify-content-between py-3">
-
-        
-      </div>
-    </div>
-  </div>
-  <div class="headerbg w-100">
-    <div class="container">
-      <nav class="navbar styledropdown navbar-expand-xl">
-        <a class="navbar-brand position-relative p-0" href="/index.html" aria-label="Super Pet">
-          <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
+      <nav class="d-flex align-items-center p-2 py-3">
+        <a href="/index.html">
+          <img src="img/logo.png" alt="Pet">
         </a>
-
-        <a class="btn btn-secondary position-relative d-flex align-items-center gap-1 d-lg-none" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-          <i class="fa fa-shopping-bag fs-4"></i>
-          <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
-        </a>
-
-        
-
-        <div class="d-md-block d-lg-none">
-          <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
-        </div>
-        
-        <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
-          <div class="headerbg__topMenus flex-fill mb-1 w-100">
-            <div class="row align-items-center justify-content-between mb-3">
-              <div class="col-lg-4">
+        <div class="d-flex flex-column flex-grow-1">
+          
+            <div class="search-btn d-flex justify-content-between align-items-center mb-2">
+              <div class="search col-lg-4">
                 <form action="#">
                   <div class="row g-0">
                     <div class="col-9">
@@ -334,174 +178,175 @@
                   </div>
                 </form>
               </div>
-              <div class="col-lg-6 d-flex align-items-center justify-content-end">
+              <div class="col-lg-8 d-flex align-items-center justify-content-end">
                 <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
                   Services
                 </a>
-                <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
-                  <i class="fa fa-user-circle me-2"></i>
-                  Login / Signup
+                <a class="btn btn-secondary me-2 d-flex align-items-center justify-content-center" href="#">
+                  <i class="fa fa-user-circle me-lg-2"></i>
+                  <span class="d-none d-lg-block">Login / Signup</span>
                 </a>
                 <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  <i class="fa fa-shopping-bag fs-4"></i>
+                  <i class="fa fa-shopping-bag fs-5"></i>
                   <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between w-100">
-            <ul class="navbar-nav align-items-center">
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/shop.html">Shop</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
-                <ul>
-                  <li class="dropdown">
-                    <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Dry Food</a></li>
-                      <li><a href="#">Wet Food</a></li>
-                      <li><a href="#">Treats</a></li>
-                      <li><a href="#">Supplements</a></li>
-                      <li><a href="#">Special Diets</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Toys</a></li>
-                      <li><a href="#">Beds</a></li>
-                      <li><a href="#">Collars</a></li>
-                      <li><a href="#">Grooming</a></li>
-                      <li><a href="#">Litter</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a href="#"><span>Dogs</span> <i class="fa-solid fa-chevron-down"></i></a>
-                <ul >
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Dry Food</a></li>
-                      <li><a href="#">Wet Food</a></li>
-                      <li><a href="#">Treats</a></li>
-                      <li><a href="#">Supplements</a></li>
-                      <li><a href="#">Special Diets</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Toys</a></li>
-                      <li><a href="#">Beds</a></li>
-                      <li><a href="#">Collars</a></li>
-                      <li><a href="#">Grooming</a></li>
-                      <li><a href="#">Leashes</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
-                <ul >
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Dry Food</a></li>
-                      <li><a href="#">Wet Food</a></li>
-                      <li><a href="#">Treats</a></li>
-                      <li><a href="#">Supplements</a></li>
-                      <li><a href="#">Special Diets</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Toys</a></li>
-                      <li><a href="#">Beds</a></li>
-                      <li><a href="#">Collars</a></li>
-                      <li><a href="#">Grooming</a></li>
-                      <li><a href="#">Leashes</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
+            <div class="links d-flex align-items-center justify-content-between w-100">
+              <ul class="navbar-nav align-items-center flex-row">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop.html">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul>
+                    <li class="dropdown">
+                      <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Dry Food</a></li>
+                        <li><a href="#">Wet Food</a></li>
+                        <li><a href="#">Treats</a></li>
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Special Diets</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Toys</a></li>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Collars</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Litter</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a href="#"><span>Dogs</span> <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul >
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Dry Food</a></li>
+                        <li><a href="#">Wet Food</a></li>
+                        <li><a href="#">Treats</a></li>
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Special Diets</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Toys</a></li>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Collars</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Leashes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
+                  <ul >
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Dry Food</a></li>
+                        <li><a href="#">Wet Food</a></li>
+                        <li><a href="#">Treats</a></li>
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Special Diets</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Toys</a></li>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Collars</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Leashes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
 
-              <li class="nav-item dropdown">
-                <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
-                <ul >
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Dry Food</a></li>
-                      <li><a href="#">Wet Food</a></li>
-                      <li><a href="#">Treats</a></li>
-                      <li><a href="#">Supplements</a></li>
-                      <li><a href="#">Special Diets</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Toys</a></li>
-                      <li><a href="#">Beds</a></li>
-                      <li><a href="#">Collars</a></li>
-                      <li><a href="#">Grooming</a></li>
-                      <li><a href="#">Leashes</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
-                <ul >
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></i></a>
-                    <ul>
-                      <li><a href="#">Dry Food</a></li>
-                      <li><a href="#">Wet Food</a></li>
-                      <li><a href="#">Treats</a></li>
-                      <li><a href="#">Supplements</a></li>
-                      <li><a href="#">Special Diets</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></i></a>
-                    <ul>
-                      <li><a href="#">Toys</a></li>
-                      <li><a href="#">Beds</a></li>
-                      <li><a href="#">Collars</a></li>
-                      <li><a href="#">Grooming</a></li>
-                      <li><a href="#">Leashes</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact</a>
-              </li>
-            </ul>
-            <ul class="sharesocial d-flex">
-              <li><a href="#" class="fb fab fa-facebook-f"></a></li>
-              <li><a href="#" class="twx fab fa-x-twitter"></a></li>
-              <li><a href="#" class="li fab fa-linkedin-in"></a></li>
-              <li><a href="#" class="in fab fa-instagram"></a></li>
-              <li><a href="#" class="yt fab fa-youtube"></a></li>
-            </ul>
-          </div>
+                <li class="nav-item dropdown">
+                  <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul >
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Dry Food</a></li>
+                        <li><a href="#">Wet Food</a></li>
+                        <li><a href="#">Treats</a></li>
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Special Diets</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="#">Toys</a></li>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Collars</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Leashes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul >
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></i></a>
+                      <ul>
+                        <li><a href="#">Dry Food</a></li>
+                        <li><a href="#">Wet Food</a></li>
+                        <li><a href="#">Treats</a></li>
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Special Diets</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></i></a>
+                      <ul>
+                        <li><a href="#">Toys</a></li>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Collars</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Leashes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+              <ul class="sharesocial d-flex">
+                <li><a href="#" class="fb fab fa-facebook-f"></a></li>
+                <li><a href="#" class="twx fab fa-x-twitter"></a></li>
+                <li><a href="#" class="li fab fa-linkedin-in"></a></li>
+                <li><a href="#" class="in fab fa-instagram"></a></li>
+                <li><a href="#" class="yt fab fa-youtube"></a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="d-md-block d-lg-none ms-3">
+          <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
         </div>
       </nav>
     </div>
-  </div>
-</header>
+  </header>
 <aside>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header justify-content-end">

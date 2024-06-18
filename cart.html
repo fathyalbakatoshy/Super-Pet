@@ -154,67 +154,47 @@
 </div>
 
   <div id="sidebody" onclick="openNav()" ></div>
-    <header>
-    <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
-      <div class="container">
-        <div class="headertop__left d-flex align-items-center justify-content-between py-3">
 
+
+  <header>
+    <div class="container">
+      <nav class="d-flex align-items-center p-2 py-3">
+        <a href="/index.html">
+          <img src="img/logo.png" alt="Pet">
+        </a>
+        <div class="d-flex flex-column flex-grow-1">
           
-        </div>
-      </div>
-    </div>
-    <div class="headerbg w-100">
-      <div class="container">
-        <nav class="navbar styledropdown navbar-expand-xl">
-          <a class="navbar-brand position-relative p-0" href="/index.html" aria-label="Super Pet">
-            <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
-          </a>
-
-          <a class="btn btn-secondary position-relative d-flex align-items-center gap-1 d-lg-none" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <i class="fa fa-shopping-bag fs-4"></i>
-            <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
-          </a>
-
-          
-
-          <div class="d-md-block d-lg-none">
-            <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
-          </div>
-          
-          <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
-            <div class="headerbg__topMenus flex-fill mb-1 w-100">
-              <div class="row align-items-center justify-content-between mb-3">
-                <div class="col-lg-4">
-                  <form action="#">
-                    <div class="row g-0">
-                      <div class="col-9">
-                        <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
-                      </div>
-                      <div class="col-3">
-                        <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
-                          <i class="fa fa-search"></i>
-                        </button>
-                      </div>
+            <div class="search-btn d-flex justify-content-between align-items-center mb-2">
+              <div class="search col-lg-4">
+                <form action="#">
+                  <div class="row g-0">
+                    <div class="col-9">
+                      <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
                     </div>
-                  </form>
-                </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-end">
-                  <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
-                    Services
-                  </a>
-                  <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
-                    <i class="fa fa-user-circle me-2"></i>
-                    Login / Signup
-                  </a>
-                  <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <i class="fa fa-shopping-bag fs-4"></i>
-                    <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
-                  </a>
-                </div>
+                    <div class="col-3">
+                      <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-8 d-flex align-items-center justify-content-end">
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
+                  Services
+                </a>
+                <a class="btn btn-secondary me-2 d-flex align-items-center justify-content-center" href="#">
+                  <i class="fa fa-user-circle me-lg-2"></i>
+                  <span class="d-none d-lg-block">Login / Signup</span>
+                </a>
+                <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="fa fa-shopping-bag fs-5"></i>
+                  <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
+                </a>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between w-100">
-              <ul class="navbar-nav align-items-center">
+            <div class="links d-flex align-items-center justify-content-between w-100">
+              <ul class="navbar-nav align-items-center flex-row">
                 <li class="nav-item">
                   <a class="nav-link" href="/index.html">Home</a>
                 </li>
@@ -225,7 +205,7 @@
                   <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
                   <ul>
                     <li class="dropdown">
-                      <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -235,7 +215,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -251,7 +231,7 @@
                   <a href="#"><span>Dogs</span> <i class="fa-solid fa-chevron-down"></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -261,7 +241,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -277,7 +257,7 @@
                   <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -287,7 +267,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -303,7 +283,7 @@
                   <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -313,7 +293,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -328,7 +308,7 @@
                   <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -338,7 +318,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -361,9 +341,11 @@
                 <li><a href="#" class="yt fab fa-youtube"></a></li>
               </ul>
             </div>
-          </div>
-        </nav>
-      </div>
+        </div>
+        <div class="d-md-block d-lg-none ms-3">
+          <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
+        </div>
+      </nav>
     </div>
   </header>
   <aside>
@@ -423,47 +405,76 @@
 <section class="cart py-5">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-8">
-          <table class="table">
-              <thead>
-                  <tr>
-                      <th>Product</th>
-                      <th class="tr-none">Quantity</th>
-                      <th>Total</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>
-                          <div class="d-flex align-items-center">
-                              <img src="img/product/Picture1.jpg" alt="Product Image" class="product-img me-3">
-                              <div>
-                                  <span>(10 Items) Legends For Kitten 3Kg - 30kg</span>
-                                  <br>
-                                  <span class="text-danger">LE 4,900.00</span>
-                                  <br>
-                                  <span class="text-decoration-line-through text-muted">LE 5,400.00</span>
-                                  <div class="d-block d-md-none mt-2" style="width: 50%;">
-                                      <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center" >
-                                          <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
-                                          <input type="number" disabled id="quantity" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
-                                          <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </td>
-                      <td class="tr-none">
-                          <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center" style="width: 50%;">
-                              <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
-                              <input type="number" disabled id="quantity2" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
-                              <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
-                          </div>
-                      </td>
-                      <td>LE 14,700.00</td>
-                  </tr>
-              </tbody>
-          </table>
+      <div class="col-lg-8">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th class="tr-none">Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img src="img/product/Picture1.jpg" alt="Product Image" class="product-img me-3">
+                  <div>
+                    <span>(10 Items) Legends For Kitten 3Kg - 30kg</span>
+                    <br>
+                    <span class="text-danger">LE 4,900.00</span>
+                    <br>
+                    <span class="text-decoration-line-through text-muted">LE 5,400.00</span>
+                    <div class="d-block d-md-none mt-2" style="width: 50%;">
+                      <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center">
+                        <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
+                        <input type="number" disabled id="quantity" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
+                        <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="tr-none">
+                <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center" style="width: 50%;">
+                  <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
+                  <input type="number" disabled id="quantity2" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
+                  <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                </div>
+              </td>
+              <td>LE 14,700.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img src="img/product/Picture3.jpg" alt="Product Image" class="product-img me-3">
+                  <div>
+                    <span>(10 Items) Legends For Kitten 3Kg - 30kg</span>
+                    <br>
+                    <span class="text-danger">LE 4,900.00</span>
+                    <br>
+                    <span class="text-decoration-line-through text-muted">LE 5,400.00</span>
+                    <div class="d-block d-md-none mt-2" style="width: 50%;">
+                      <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center">
+                        <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
+                        <input type="number" disabled id="quantity" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
+                        <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="tr-none">
+                <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center" style="width: 50%;">
+                  <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
+                  <input type="number" disabled id="quantity2" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
+                  <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                </div>
+              </td>
+              <td>LE 14,700.00</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="col-12 col-md-4 mt-4 mt-md-0">
           <div class="bg-light p-4 rounded-3 shadow-sm">

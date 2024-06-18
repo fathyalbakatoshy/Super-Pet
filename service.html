@@ -154,67 +154,47 @@
 </div>
 
   <div id="sidebody" onclick="openNav()" ></div>
-    <header>
-    <div class="headertop bg-primary py-2 text-white d-none d-lg-block">
-      <div class="container">
-        <div class="headertop__left d-flex align-items-center justify-content-between py-3">
 
+
+  <header>
+    <div class="container">
+      <nav class="d-flex align-items-center p-2 py-3">
+        <a href="/index.html">
+          <img src="img/logo.png" alt="Pet">
+        </a>
+        <div class="d-flex flex-column flex-grow-1">
           
-        </div>
-      </div>
-    </div>
-    <div class="headerbg w-100">
-      <div class="container">
-        <nav class="navbar styledropdown navbar-expand-xl">
-          <a class="navbar-brand position-relative p-0" href="/index.html" aria-label="Super Pet">
-            <img class="d-block mx-auto" src="img/logo.png" alt="" loading="lazy">
-          </a>
-
-          <a class="btn btn-secondary position-relative d-flex align-items-center gap-1 d-lg-none" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <i class="fa fa-shopping-bag fs-4"></i>
-            <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
-          </a>
-
-          
-
-          <div class="d-md-block d-lg-none">
-            <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
-          </div>
-          
-          <div class="collapse navbar-collapse flex-column align-items-baseline" id="listmobile">
-            <div class="headerbg__topMenus flex-fill mb-1 w-100">
-              <div class="row align-items-center justify-content-between mb-3">
-                <div class="col-lg-4">
-                  <form action="#">
-                    <div class="row g-0">
-                      <div class="col-9">
-                        <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
-                      </div>
-                      <div class="col-3">
-                        <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
-                          <i class="fa fa-search"></i>
-                        </button>
-                      </div>
+            <div class="search-btn d-flex justify-content-between align-items-center mb-2">
+              <div class="search col-lg-4">
+                <form action="#">
+                  <div class="row g-0">
+                    <div class="col-9">
+                      <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
                     </div>
-                  </form>
-                </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-end">
-                  <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
-                    Services
-                  </a>
-                  <a class="btn btn-secondary me-2 d-flex align-items-center" href="#">
-                    <i class="fa fa-user-circle me-2"></i>
-                    Login / Signup
-                  </a>
-                  <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <i class="fa fa-shopping-bag fs-4"></i>
-                    <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
-                  </a>
-                </div>
+                    <div class="col-3">
+                      <button class="btn d-block w-100 h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-8 d-flex align-items-center justify-content-end">
+                <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
+                  Services
+                </a>
+                <a class="btn btn-secondary me-2 d-flex align-items-center justify-content-center" href="#">
+                  <i class="fa fa-user-circle me-lg-2"></i>
+                  <span class="d-none d-lg-block">Login / Signup</span>
+                </a>
+                <a class="btn btn-secondary position-relative d-flex align-items-center gap-1" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="fa fa-shopping-bag fs-5"></i>
+                  <span class="position-absolute border border-white border-2 text-secondary bg-primary iconcart d-flex align-items-center justify-content-center rounded-circle">2</span>
+                </a>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between w-100">
-              <ul class="navbar-nav align-items-center">
+            <div class="links d-flex align-items-center justify-content-between w-100">
+              <ul class="navbar-nav align-items-center flex-row">
                 <li class="nav-item">
                   <a class="nav-link" href="/index.html">Home</a>
                 </li>
@@ -225,7 +205,7 @@
                   <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
                   <ul>
                     <li class="dropdown">
-                      <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -235,7 +215,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -251,7 +231,7 @@
                   <a href="#"><span>Dogs</span> <i class="fa-solid fa-chevron-down"></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -261,7 +241,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -277,7 +257,7 @@
                   <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -287,7 +267,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -303,7 +283,7 @@
                   <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -313,7 +293,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -328,7 +308,7 @@
                   <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
                   <ul >
                     <li class="dropdown">
-                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                      <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></i></a>
                       <ul>
                         <li><a href="#">Dry Food</a></li>
                         <li><a href="#">Wet Food</a></li>
@@ -338,7 +318,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-down"></i></i></a>
+                      <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></i></a>
                       <ul>
                         <li><a href="#">Toys</a></li>
                         <li><a href="#">Beds</a></li>
@@ -361,9 +341,11 @@
                 <li><a href="#" class="yt fab fa-youtube"></a></li>
               </ul>
             </div>
-          </div>
-        </nav>
-      </div>
+        </div>
+        <div class="d-md-block d-lg-none ms-3">
+          <i class="fa-solid fa-bars-staggered" onclick="openNav()" style="color: #000072; font-size: 24px; cursor: pointer;"></i>
+        </div>
+      </nav>
     </div>
   </header>
   <aside>
@@ -433,10 +415,12 @@
     <div class="tab-content pt-5" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-services-1" role="tabpanel" aria-labelledby="nav-services-1-tab" tabindex="0">
         <div class="row">
-          <div class="col-lg-7">
-            <img src="img/pet boarding.jpg" class="w-100 rounded-3 mb-5" alt="pet boarding">
+          <div class="col-lg-7 ">
+            <div class="img-sticky-top ">
+              <img src="img/pet boarding.jpg" class="w-100 rounded-3 mb-5 " alt="pet boarding">
             <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Pet Boarding</h4>
             <p style="font-size: 22px;">SUPER PET Boarding service is Here for your Cat to get an enjoyable Vacation Any Time, Under the Supervision of our Doctors your cat is safe with us!</p>
+            </div>
           </div>
           <div class="col-lg-5">
             <div class=" bg-light p-4 p-lg-5">
@@ -595,9 +579,13 @@
       </div>
       <div class="tab-pane fade" id="nav-services-2" role="tabpanel" aria-labelledby="nav-services-2-tab" tabindex="0">
         <div class="row">
-          <div class="col-lg-7"><img src="img/Dog Grooming.jpg" class="w-100 rounded-3 mb-5" alt="Dog Grooming">
-            <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Grooming And Shower</h4>
-            <p style="font-size: 22px;">SUPER PET grooming team is here for your pet to do fresh hair cuts safely and be always on style! Also we have shower and medical shower to keep your pet always clean and protect them from ticks & fleas.. Place your appointment now!</p>
+          <div class="col-lg-7">
+            <div class="img-sticky-top">
+
+              <img src="img/Dog Grooming.jpg" class="w-100 rounded-3 mb-5" alt="Dog Grooming">
+              <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Grooming And Shower</h4>
+              <p style="font-size: 22px;">SUPER PET grooming team is here for your pet to do fresh hair cuts safely and be always on style! Also we have shower and medical shower to keep your pet always clean and protect them from ticks & fleas.. Place your appointment now!</p>
+            </div>
           </div>
           <div class="col-lg-5">
             <div class=" bg-light p-4 p-lg-5">
@@ -694,9 +682,11 @@
       <div class="tab-pane fade" id="nav-services-3" role="tabpanel" aria-labelledby="nav-services-3-tab" tabindex="0">
         <div class="row">
           <div class="col-lg-7">
-            <img src="img/dog licence.jpg" class="w-100 rounded-3 mb-5" alt="Dog Licence">
-            <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Dog Licence</h4>
-            <p style="font-size: 22px;">Your dog is safe with its licence. ORDER IT NOW!</p>
+            <div class="img-sticky-top">
+              <img src="img/dog licence.jpg" class="w-100 rounded-3 mb-5" alt="Dog Licence">
+              <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Dog Licence</h4>
+              <p style="font-size: 22px;">Your dog is safe with its licence. ORDER IT NOW!</p>
+            </div>
           </div>
           <div class="col-lg-5">
             <div class=" bg-light p-4 p-lg-5">
@@ -752,9 +742,11 @@
       <div class="tab-pane fade" id="nav-services-4" role="tabpanel" aria-labelledby="nav-services-4-tab" tabindex="0">
         <div class="row">
           <div class="col-lg-7">
-            <img src="img/Dog travelling.jpg" class="w-100 rounded-3 mb-5" alt="Dog Travelling">
-            <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Pet Travelling</h4>
-            <p style="font-size: 22px;">Get your pet Travelling papers Done by one Click!</p>
+            <div class="img-sticky-top">
+              <img src="img/Dog travelling.jpg" class="w-100 rounded-3 mb-5" alt="Dog Travelling">
+              <h4 class="mb-4 h1" style="font-family: var(--primery-font);">Pet Travelling</h4>
+              <p style="font-size: 22px;">Get your pet Travelling papers Done by one Click!</p>
+            </div>
           </div>
           <div class="col-lg-5">
             <div class=" bg-light p-4 p-lg-5">
