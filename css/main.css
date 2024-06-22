@@ -2191,6 +2191,7 @@ ul.category li:hover {
   position: relative;
   border: none;
   margin-bottom: 10px;
+  width: 100px;
 }
 .nav-pills li a {
   width: 130px;
@@ -2344,10 +2345,11 @@ ul.product_meta li a {
   .nav-pills {
     flex-direction: row;
     margin: 0;
+    justify-content: space-between;
   }
 
   .nav-pills li a {
-    width: 105px;
+    width: 100px;
     height: 105px;
   }
 
