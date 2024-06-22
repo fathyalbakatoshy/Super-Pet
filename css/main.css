@@ -2184,7 +2184,7 @@ ul.category li:hover {
 .nav-pills {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .nav-pills li {
@@ -2227,9 +2227,13 @@ ul.category li:hover {
 }
 
 .pd-main-img {
-  padding: 60px;
+  padding: 20px;
   text-align: center;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .tab-pane {
