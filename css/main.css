@@ -2189,7 +2189,6 @@ ul.category li:hover {
 
 .nav-pills li {
   position: relative;
-  overflow: hidden;
   border: none;
   margin-bottom: 10px;
 }
@@ -2345,7 +2344,6 @@ ul.product_meta li a {
   .nav-pills {
     flex-direction: row;
     margin: 0;
-    justify-content: space-between;
   }
 
   .nav-pills li a {
@@ -2378,7 +2376,11 @@ ul.product_meta li a {
     padding: 15px 15px !important;
   }
   .healthy-product h6 {
-    font-size: 20px;
+    font-size: 18px ;
+  }
+
+  .healthy-product a {
+    font-size: 14px;
   }
 }
 
