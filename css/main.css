@@ -454,7 +454,7 @@ h3 {
     height: 100px;
   }
 
-  .boxicons .boxicons__icon::after {
+  /* .boxicons .boxicons__icon::after {
     position: absolute;
     content: "";
     top: 0% !important;
@@ -471,7 +471,7 @@ h3 {
     animation-play-state: paused;
     transform: translate(-50%, -50%);
     display: none;
-  }
+  } */
 }
 
 .title__shapes::before {
@@ -1604,6 +1604,16 @@ footer .phone i {
   display: block;
   font-weight: bold;
   color: var(--main-color);
+}
+
+@media (max-width: 576px) {
+  .call-us a {
+    font-size: 22px;
+  }
+
+  .widget-title {
+    margin-bottom: 30px;
+  }
 }
 
 ul.social-icon {
@@ -2982,7 +2992,7 @@ header a img {
   }
 
   header a img {
-    width: 70px;
+    width: 90px;
     margin-right: 10px;
   }
 
