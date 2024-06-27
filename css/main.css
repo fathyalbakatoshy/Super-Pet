@@ -3152,3 +3152,13 @@ tbody tr:last-child {
     align-items: end !important;
   }
 }
+
+header .form-control {
+  width: 315px !important;
+}
+
+@media (max-width: 771px) {
+    header .form-control {
+      width: 200px !important;
+    }
+}
