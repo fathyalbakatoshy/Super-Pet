@@ -1466,7 +1466,7 @@ img.img-44 {
 
 footer {
   background-size: contain;
-  padding-top: 100px;
+  padding-top: 50px !important;
   background-repeat: no-repeat;
   position: relative;
   background-position: bottom;
