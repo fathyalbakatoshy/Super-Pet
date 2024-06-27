@@ -96,11 +96,11 @@ ul {
 
   .hero-img img {
     width: 100%;
-    height: calc(100vh - 420px);
+    height: calc(100vh - 430px);
   }
 
   .hero {
-    height: calc(100vh - 130px);
+    height: calc(100vh - 150px);
     background-size: contain;
   }
 
