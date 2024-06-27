@@ -87,7 +87,7 @@ ul {
   justify-content: center;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 770px) { 
   .hero-img {
     padding-top: 0;
     display: flex;
@@ -96,13 +96,12 @@ ul {
 
   .hero-img img {
     width: 100%;
-    height: calc(100vh - 430px);
+    height: calc(100vh - 440px);
   }
 
   .hero {
     height: calc(100vh - 150px);
     background-size: contain;
-    overflow-y: auto;
   }
 
   .hero-text h1 {
@@ -110,7 +109,10 @@ ul {
   }
   .hero-text h3 {
     height: 159px;
-  }
+    padding-bottom: 20px !important;
+    /* margin: 0 !important; */
+  } 
+  
 }
 
 .hero-text {
