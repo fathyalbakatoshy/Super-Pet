@@ -183,3 +183,50 @@ $(document).ready(function(){
     ]
   });
 });
+
+$(document).ready(function () {
+  // Initialize Zooming for the image in the currently active tab
+  $('.zoomable-image').each(function() {
+    $(this).zoom({
+      url: $(this).attr('src'),  // Source of the zoomed image
+      scale: 1.5,               // Zoom scale
+    });
+  });
+
+  // Handle tab change events
+  $('a[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+    var target = $(e.target).attr("data-bs-target");
+    var $activeImage = $(target).find('img');
+
+    // Remove previous zoom instance
+    $('.zoomable-image').each(function() {
+      $(this).zoom('destroy');
+    });
+
+    // Reinitialize zoom for the new image
+    if ($activeImage.length > 0) {
+      $activeImage.zoom({
+        url: $activeImage.attr('src'),
+        scale: 1.5,
+      });
+    }
+  });
+});
+
+// Function to increment quantity
+function incrementValue() {
+  var value = parseInt(document.getElementById('quantity').value, 10);
+  value = isNaN(value) ? 1 : value;
+  value++;
+  document.getElementById('quantity').value = value;
+}
+
+// Function to decrement quantity
+function decrementValue() {
+  var value = parseInt(document.getElementById('quantity').value, 10);
+  value = isNaN(value) ? 1 : value;
+  if (value > 1) {
+    value--;
+    document.getElementById('quantity').value = value;
+  }
+}
