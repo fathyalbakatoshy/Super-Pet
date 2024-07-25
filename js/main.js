@@ -152,7 +152,7 @@ function decrementValue() {
 $(document).ready(function(){
   $('.product-carousel').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 4,
     dots: true,
     arrows: true,

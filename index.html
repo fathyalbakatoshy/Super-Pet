@@ -108,19 +108,7 @@
                     <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('reptileDropdown')">Reptile</a>
-                <ul class="dropdown-menu" id="reptileDropdown">
-                    <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-                    <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('reptileSubDropdown1')">Name Sub Menu</a>
-                        <ul class="dropdown-menu" id="reptileSubDropdown1">
-                            <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                            <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-                </ul>
-            </li>
+            
             <li class="nav-item">
                 <a class="nav-link" href="/contact.html">Contact</a>
             </li>
@@ -178,7 +166,7 @@
                       
                         <div class="d-flex align-content-center">
                           <input type="text" class="form-control rounded-end-0 w-100" placeholder="Type your search words...">
-                          <button class="btn d-block h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;" type="submit">
+                          <button class="btn d-block h-100 rounded-start-0 d-flex align-items-center justify-content-center" style="background-color: #b9d432;color: white;border-color: #b9d432" type="submit">
                             <i class="fa fa-search"></i>
                           </button>
                         </div>
@@ -186,9 +174,6 @@
                     </form>
                   </div>
                   <div class=" d-flex align-items-center justify-content-end">
-                    <a class="btn btn-secondary me-2 d-flex align-items-center" href="/service.html">
-                      Services
-                    </a>
                     <a class="btn btn-secondary me-2 d-flex align-items-center justify-content-center" href="#">
                       <i class="fa fa-user-circle me-lg-2"></i>
                       <span class="d-none d-lg-block">Login / Signup</span>
@@ -208,29 +193,71 @@
                       <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link" href="/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link" href="/shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact.html">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a href="#"><span>Cats</span> <i class="fa-solid fa-chevron-down"></i></a>
                       <ul>
                         <li class="dropdown">
-                          <a href="#"><span>Cat Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <a href="#"><span>Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                           <ul>
                             <li><a href="#">Dry Food</a></li>
                             <li><a href="#">Wet Food</a></li>
                             <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
+                            <li><a href="#">Fresh Food</a></li>
                           </ul>
                         </li>
                         <li class="dropdown">
-                          <a href="#"><span>Cat Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <a href="#"><span>Litter</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <ul>
+                            <li><a href="#">Clumping</a></li>
+                            <li><a href="#">Nun Chumping</a></li>
+                            <li><a href="#">Crystal</a></li>
+                            <li><a href="#">Litter Boxes</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#"><span>Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                           <ul>
                             <li><a href="#">Toys</a></li>
+                            <li><a href="#">Bruches</a></li>
+                            <li><a href="#">Collers</a></li>
+                            <li><a href="#">Clippers</a></li>
+                            <li><a href="#">Clothers</a></li>
+                            <li><a href="#">Boxes</a></li>
                             <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Litter</a></li>
+                            <li><a href="#">Scratches</a></li>
+                            <li><a href="#">Dispenser</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#"><span>Hygien</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <ul>
+                            <li><a href="#">Shampoo</a></li>
+                            <li><a href="#">Perfums</a></li>
+                            <li><a href="#">Wipes</a></li>
+                            <li><a href="#">Deodorant</a></li>
+                            <li><a href="#">Grooming Gloves</a></li>
+                            <li><a href="#">Toothpaste</a></li>
+                            <li><a href="#">Home Spray</a></li>
+
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#"><span>Medication</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <ul>
+                            <li><a href="#">Artiplea</a></li>
+                            <li><a href="#">Dewormers</a></li>
+                            <li><a href="#">Supplementss</a></li>
                           </ul>
                         </li>
                       </ul>
@@ -240,114 +267,92 @@
                       <a href="#"><span>Dogs</span> <i class="fa-solid fa-chevron-down"></i></a>
                       <ul >
                         <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <a href="#"><span>Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
                           <ul>
                             <li><a href="#">Dry Food</a></li>
                             <li><a href="#">Wet Food</a></li>
                             <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
+                            <li><a href="#">Fresh Food</a></li>
                           </ul>
                         </li>
                         <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <a href="#"><span>Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
                           <ul>
                             <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
+                            <li><a href="#">Bruches</a></li>
                             <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
+                            <li><a href="#">Muzzles</a></li>
+                            <li><a href="#">Hurnes</a></li>
+                            <li><a href="#">Dispersors</a></li>
+                            <li><a href="#">Beds</a></li>
+                            <li><a href="#">Cages</a></li>
+                            <li><a href="#">Clothes</a></li>
                           </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#"><span>Hygien</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <ul>
+                            <li><a href="#">Shampoo</a></li>
+                            <li><a href="#">Perfums</a></li>
+                            <li><a href="#">Wipes</a></li>
+                            <li><a href="#">Deodorant</a></li>
+                            <li><a href="#">Grooming Gloves</a></li>
+                            <li><a href="#">Toothpaste</a></li>
+                            <li><a href="#">Home Spray</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#"><span>Medication</span> <i class="fa-solid fa-chevron-right"></i></a>
+                          <ul>
+                            <li><a href="#">Artiplea</a></li>
+                            <li><a href="#">Dewormers</a></li>
+                            <li><a href="#">Supplementss</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#"><span>Pads Diapers</span></i></a>
                         </li>
                       </ul>
                     </li>
                     
                     <li class="nav-item dropdown">
-                      <a href="#"><span>Birds  </span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
+                      <a href="#"><span>Fish</span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
                       <ul >
                         <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
+                          <a href="#"><span>Foods</span></a>
                         </li>
                         <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-    
-                    <li class="nav-item dropdown">
-                      <a href="#"><span>Fish </span>  <i class="fa-solid fa-chevron-down"></i></a>
-                      <ul >
-                        <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
+                          <a href="#"><span>Accessories</span></a>
                         </li>
                         <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
-                          </ul>
+                          <a href="#"><span>Supplements</span></a>
                         </li>
+
                       </ul>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#"><span>Reptile </span> <i class="fa-solid fa-chevron-down"></i></a>
+                      <a href="#"><span>Birds</span> <i class="fa-solid fa-chevron-down  fs"></i></i></a>
                       <ul >
                         <li class="dropdown">
-                          <a href="#"><span>Dog Foods</span> <i class="fa-solid fa-chevron-right"></i></i></a>
-                          <ul>
-                            <li><a href="#">Dry Food</a></li>
-                            <li><a href="#">Wet Food</a></li>
-                            <li><a href="#">Treats</a></li>
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Special Diets</a></li>
-                          </ul>
+                          <a href="#"><span>Foods</span></a>
                         </li>
                         <li class="dropdown">
-                          <a href="#"><span>Dog Accessories</span> <i class="fa-solid fa-chevron-right"></i></i></a>
-                          <ul>
-                            <li><a href="#">Toys</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Collars</a></li>
-                            <li><a href="#">Grooming</a></li>
-                            <li><a href="#">Leashes</a></li>
-                          </ul>
+                          <a href="#"><span>Accessories</span></a>
                         </li>
+                        <li class="dropdown">
+                          <a href="#"><span>Supplements</span></a>
+                        </li>
+
                       </ul>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact.html">Contact</a>
-                    </li>
+
+                    
                   </ul>
                   <ul class="sharesocial d-flex">
                     <li><a href="#" class="fb fab fa-facebook-f"></a></li>
-                    <li><a href="#" class="twx fab fa-x-twitter"></a></li>
-                    <li><a href="#" class="li fab fa-linkedin-in"></a></li>
                     <li><a href="#" class="in fab fa-instagram"></a></li>
                     <li><a href="#" class="yt fab fa-youtube"></a></li>
+                    <li><a href="#" class="tk fab fa-tiktok"></a></li>
                   </ul>
                 </div>
             </div>
@@ -407,62 +412,21 @@
         data-bs-interval="3000"
       >
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2" ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row gy-4 d-flex align-content-center">
               <div class="col-lg-5">
                 <div class="hero-text">
-                  <h1>Ensure the Best Care for Your Pets</h1>
-                  <h3>
-                    We are your local dog home boarding service giving you
-                    complete
-                  </h3>
-                  
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="hero-img">
-                  <img src="img/slider1.png" class=" w-100 z-3"  alt="person img" />
-                  <img src="img/hero-2.png" class="img-1" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="row gy-4 d-flex align-content-center">
-              <div class="col-lg-5">
-                <div class="hero-text">
                   <h1>Show Your Pets You Care</h1>
-                  <h3>
-                    We are your local dog home boarding service giving you complete
-                  </h3>
-                  
+                  <h3>We are your local dog home boarding service giving you complete</h3>
                 </div>
               </div>
               <div class="col-lg-7">
                 <div class="hero-img">
-                  <img src="img/slider2.png" class="w-100 z-3" alt="person img" />
+                  <img src="img/slider2.png" class="w-90 z-3" alt="person img" />
                   <img src="img/hero-2.png" class="img-1" alt="" />
                 </div>
               </div>
@@ -481,7 +445,7 @@
               </div>
               <div class="col-lg-7">
                 <div class="hero-img">
-                  <img src="img/slider3.png" class="w-100 z-3" alt="person img" />
+                  <img src="img/slider3.png" class="w-90 z-3" alt="person img" />
                   <img src="img/hero-2.png" class="img-1" alt="" />
                 </div>
               </div>
@@ -498,7 +462,7 @@
   </div>
 </section>
 
-<div class="py-5 py-lg-5  wow animate__fadeInUp">
+<div class="py-3 py-lg-3 pt-lg-5 wow animate__fadeInUp">
   <div class="container">
     <div class="row row-col-xl justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-5">
       <div class="col">
@@ -521,16 +485,7 @@
           </p>
         </a>
       </div>
-      <div class="col">
-        <a class="boxicons d-block my-3 wow animate__fadeInUp" href="#" style="visibility: visible; animation-name: fadeInUp;">
-          <div class="boxicons__icon position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4">
-            <img class="img-fluid d-block mx-auto" src="img/icon-5.png" alt="">
-          </div>
-          <p class="fw-bold mb-0 text-center font-20 line-12 font-md-30 font-w500">
-            Rabbit Food
-          </p>
-        </a>
-      </div>
+
       <div class="col">
         <a class="boxicons d-block my-3 wow animate__fadeInUp" href="#" style="visibility: visible; animation-name: fadeInUp;">
           <div class="boxicons__icon position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4">
@@ -605,7 +560,7 @@
   </div>
 </div> -->
 
-  <section class="product py-5  wow animate__fadeInUp">
+  <section class="product py-3  wow animate__fadeInUp">
     <div class="container">
       <div class="header text-center">
         <img src="img/header-img.png" width="66" style="padding-bottom: 16px;" alt="">
@@ -613,201 +568,23 @@
         <h2>Healthy Products</h2>
       </div>
 
-      <div class="row gy-4">
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture1.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">friskies cat Beef and Chicken 300gm/1.7kg</a>
-            <h6>195.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture2.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">Friskies Cat Junior 300gm/1.5kg </a>
-            <h6>175.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture3.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">Friskies Dog Balance 3kg</a>
-            <h6>280.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture4.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">Friskies Dog Active 10kg</a>
-            <h6>520.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture5.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">Cat chow Sterilised 1.5kg</a>
-            <h6>135.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture6.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">Dog Chow Light 2.5kg </a>
-            <h6>185.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture7.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">Dog Cow Sensitive 2.5kg</a>
-            <h6>315.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="healthy-product wow animate__fadeInUp ">
-            <div class="healthy-product-img">
-                <img src="img/product/Picture8.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="add-to-cart">
-                  <a href="#">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-            </div>
-            <span>Animal Feed</span>
-            <a href="our-products.html">Dog Cow Puppy 2.5kg</a>
-            <h6>199.00 L.E</h6>
-        </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-6">
-          <div class="healthy-product mb-lg-0 wow animate__fadeInUp">
-              <div class="healthy-product-img">
-                  <img src="img/product/Picture13.jpg" class="w-100" alt="food">
+      <div class="gap no-top products-section py-3">
+        <div class="container">
+          <div class="information text-center">
+            <h3 class=" text-start">Best Sellers</h3>
+            <div class="boder-bar"></div>
+          </div>
+          <div class="product-carousel">
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture3.jpg" alt="food">
                   <ul class="star">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
                   </ul>
                   <div class="add-to-cart">
                     <a href="#">Add to Cart</a>
@@ -815,57 +592,569 @@
                       <i class="fa-regular fa-heart"></i>
                     </a>
                   </div>
-              </div>
-              <span>Animal Feed</span>
-              <a href="our-products.html">Advantix Over 25Kg</a>
-              <h6><del>320.00 L.E</del>250.00 L.E</h6>
-          </div>
-      </div>
-      <div class="col-lg-9">
-        <div class="deal-of-the-week">
-            <div class="healthy-product-img ">
-                <h6>Deal of the Week</h6>
-                <img src="img/product/Picture12.jpg" class="w-100" alt="food">
-                <ul class="star">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-            </div>
-            <div class="healthy-product wow animate__fadeInUp ">
-                <span>Animal Feed</span>
-                <a href="our-products.html">Advocate 25kg - 40kg </a>
-              <div>
-                <h6><del>450.00 L.E</del>300.00 L.E</h6>
-                <h5>up to 14% off</h5>
-              </div>
-                <div class="add-to-cart">
-                  <a href="#" class="button">Add to Cart</a>
-                  <a href="#" class="heart-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
                 </div>
-                <div id="countdown">
-                    <ul class="d-flex
-                    ">
-                    <li><span id="days" class=" text-white">10</span>days</li>
-                    <li><span id="hours" class=" text-white">71</span>Hour</li>
-                      <li><span id="minutes" class=" text-white">65</span>Min</li>
-                      <li class="mb-0"><span id="seconds" class=" text-white">23</span>Sec</li>
-                    </ul>
-                   </div>
+                <span>Animal Feed</span>
+                <a href="#">Procan Adult Dog Food</a>
+                <h6>310 L.E</h6>
+              </div>
             </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture2.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Best Organic Feeds</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture1.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Green Papaya Fruit</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture4.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">KMR Pwdr 12oz</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture3.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Procan Adult Dog Food</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture2.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Best Organic Feeds</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture1.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Green Papaya Fruit</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture4.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">KMR Pwdr 12oz</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-      </div>
-
+      </d>
+      <section class="gap no-top products-section py-3">
+        <div class="container">
+          <div class="information text-center">
+            <h3 class=" text-start">Best Sellers</h3>
+            <div class="boder-bar"></div>
+          </div>
+          <div class="product-carousel">
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture3.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Procan Adult Dog Food</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture2.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Best Organic Feeds</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture1.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Green Papaya Fruit</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture4.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">KMR Pwdr 12oz</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture3.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Procan Adult Dog Food</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture2.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Best Organic Feeds</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture1.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Green Papaya Fruit</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture4.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">KMR Pwdr 12oz</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gap no-top products-section py-3">
+        <div class="container">
+          <div class="information text-center">
+            <h3 class=" text-start">Recently Arrived</h3>
+            <div class="boder-bar"></div>
+          </div>
+          <div class="product-carousel">
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture3.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Procan Adult Dog Food</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture2.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Best Organic Feeds</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture1.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Green Papaya Fruit</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture4.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">KMR Pwdr 12oz</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture3.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Procan Adult Dog Food</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture2.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Best Organic Feeds</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-lg-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture1.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">Green Papaya Fruit</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="healthy-product mb-0">
+                <div class="healthy-product-img">
+                  <img src="img/product/Picture4.jpg" alt="food">
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <div class="add-to-cart">
+                    <a href="#">Add to Cart</a>
+                    <a href="#" class="heart-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <span>Animal Feed</span>
+                <a href="#">KMR Pwdr 12oz</a>
+                <h6>310 L.E</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </section>
-  <div class="blog py-5  wow animate__fadeInUp">
+  <div class="blog py-4  wow animate__fadeInUp">
     <div class="container">
-      <div class="header text-center">
+      <div class="header text-center pb-5">
           <img src="img/header-img.png" alt="heading-img">
           <h6>Blog and News</h6>
           <h2>Recent Articles</h2>
@@ -914,9 +1203,9 @@
   </div>
   </div>
 
-  <section class="py-5 no-top  wow animate__fadeInUp">
+  <section class="py-4 no-top  wow animate__fadeInUp">
     <div class="container  text-center text-md-start ">
-        <div class="header text-center">
+        <div class="header text-center pb-5">
           <img src="img/header-img.png" width="66" style="padding-bottom: 16px;" alt="">
           <h6>Discover a world of happiness.</h6>
           <h2>Choose Service</h2>
@@ -1087,11 +1376,11 @@
                     <h3>Quick Links</h3>
                     <div class="boder"></div>
                       <ul>
-                        <!-- <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Dog Boarding Services</a></li> -->
+                        
                         <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Cat Boarding Services</a></li>
                         <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Spa and Grooming Services</a></li>
                         <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Care for Puppy</a></li>
-                        <!-- <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Service at a Resort</a></li> -->
+                        
                         <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Veterinary Service</a></li>
                       </ul>
                     </div>
@@ -1139,6 +1428,8 @@
   <!-- START JQUIRY FILE -->
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/wow-1.3.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 </html>
