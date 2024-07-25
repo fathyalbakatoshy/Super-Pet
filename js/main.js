@@ -1,19 +1,46 @@
 function openNav() {
   var opennav = document.getElementById("mySidenav");
   if (opennav) {
-    opennav.classList.toggle("active");
+      opennav.classList.toggle("active");
   }
   document.body.classList.toggle("stop");
   var element = document.getElementById("sidebody");
   if (element) {
-    element.classList.toggle("active");
+      element.classList.toggle("active");
   }
 }
 
-function toggleDropdown(id) {
+function toggleDropdown(id, parentClass) {
+  // البحث عن جميع القوائم الكبيرة في القائمة الرئيسية
+  var parentElement = document.querySelector(parentClass);
+  var allDropdowns = parentElement ? parentElement.querySelectorAll('.dropdown-menu') : [];
+
+  // إغلاق جميع القوائم الكبيرة والقوائم الفرعية
+  allDropdowns.forEach(function(dropdown) {
+      if (dropdown.id !== id) {
+          dropdown.classList.remove('show');
+      }
+  });
+
+  // التبديل لحالة القائمة المطلوبة
   var element = document.getElementById(id);
-  element.classList.toggle("show");
+  if (element) {
+      element.classList.toggle('show');
+  }
+  
+  // إغلاق جميع القوائم الفرعية داخل القائمة الكبيرة التي يتم فتحها
+  if (element && element.classList.contains('show')) {
+      var subDropdowns = element.querySelectorAll('.dropdown-menu');
+      subDropdowns.forEach(function(subDropdown) {
+          subDropdown.classList.remove('show');
+      });
+  }
 }
+
+
+
+
+
 
 
 

@@ -27,13 +27,67 @@
             <a class="nav-link" href="/index.html">Home</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="/about.html">About Us</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="/shop.html">Shop</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/service.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+        </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsDropdown')">Cats</a>
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsDropdown', '#mySidenav')">Cats</a>
             <ul class="dropdown-menu" id="catsDropdown">
-                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown1')">Cats Food</a>
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown1', '#catsDropdown')">Foods</a>
                     <ul class="dropdown-menu" id="catsSubDropdown1">
+                        <li><a class="dropdown-item" href="#">Dry Food</a></li>
+                        <li><a class="dropdown-item" href="#">Wet Food</a></li>
+                        <li><a class="dropdown-item" href="#">Treats</a></li>
+                        <li><a class="dropdown-item" href="#">Fresh Food</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown2', '#catsDropdown')">Accessories</a>
+                    <ul class="dropdown-menu" id="catsSubDropdown2">
+                        <li><a class="dropdown-item" href="#">Toys</a></li>
+                        <li><a class="dropdown-item" href="#">Brushes</a></li>
+                        <li><a class="dropdown-item" href="#">Collars</a></li>
+                        <li><a class="dropdown-item" href="#">Clippers</a></li>
+                        <li><a class="dropdown-item" href="#">Clothes</a></li>
+                        <li><a class="dropdown-item" href="#">Boxes</a></li>
+                        <li><a class="dropdown-item" href="#">Beds</a></li>
+                        <li><a class="dropdown-item" href="#">Scratches</a></li>
+                        <li><a class="dropdown-item" href="#">Dispenser</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown3', '#catsDropdown')">Hygiene</a>
+                    <ul class="dropdown-menu" id="catsSubDropdown3">
+                        <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                        <li><a class="dropdown-item" href="#">Perfumes</a></li>
+                        <li><a class="dropdown-item" href="#">Wipes</a></li>
+                        <li><a class="dropdown-item" href="#">Deodorant</a></li>
+                        <li><a class="dropdown-item" href="#">Grooming Gloves</a></li>
+                        <li><a class="dropdown-item" href="#">Toothpaste</a></li>
+                        <li><a class="dropdown-item" href="#">Home Spray</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown4', '#catsDropdown')">Medication</a>
+                    <ul class="dropdown-menu" id="catsSubDropdown4">
+                        <li><a class="dropdown-item" href="#">Arthritis</a></li>
+                        <li><a class="dropdown-item" href="#">Dewormers</a></li>
+                        <li><a class="dropdown-item" href="#">Supplements</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsDropdown', '#mySidenav')">Dogs</a>
+            <ul class="dropdown-menu" id="dogsDropdown">
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown1', '#dogsDropdown')">Foods</a>
+                    <ul class="dropdown-menu" id="dogsSubDropdown1">
                         <li><a class="dropdown-item" href="#">Dry Food</a></li>
                         <li><a class="dropdown-item" href="#">Wet Food</a></li>
                         <li><a class="dropdown-item" href="#">Treats</a></li>
@@ -41,118 +95,57 @@
                         <li><a class="dropdown-item" href="#">Special Diets</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('catsSubDropdown2')">Cat Accessories</a>
-                    <ul class="dropdown-menu" id="catsSubDropdown2">
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown2', '#dogsDropdown')">Accessories</a>
+                    <ul class="dropdown-menu" id="dogsSubDropdown2">
                         <li><a class="dropdown-item" href="#">Toys</a></li>
                         <li><a class="dropdown-item" href="#">Beds</a></li>
                         <li><a class="dropdown-item" href="#">Collars</a></li>
-                        <li><a class="dropdown-item" href="#">Grooming</a></li>
-                        <li><a class="dropdown-item" href="#">Litter</a></li>
+                        <li><a class="dropdown-item" href="#">Muzzles</a></li>
+                        <li><a class="dropdown-item" href="#">Harnesses</a></li>
+                        <li><a class="dropdown-item" href="#">Dispersers</a></li>
+                        <li><a class="dropdown-item" href="#">Beds</a></li>
+                        <li><a class="dropdown-item" href="#">Cages</a></li>
+                        <li><a class="dropdown-item" href="#">Clothes</a></li>
                     </ul>
                 </li>
-                
-            </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsDropdown')">Dogs</a>
-            <ul class="dropdown-menu" id="dogsDropdown">
-                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown1')">Dogs Food</a>
-                    <ul class="dropdown-menu" id="dogsSubDropdown1">
-                      <li><a class="dropdown-item" href="#">Dry Food</a></li>
-                      <li><a class="dropdown-item" href="#">Wet Food</a></li>
-                      <li><a class="dropdown-item" href="#">Treats</a></li>
-                      <li><a class="dropdown-item" href="#">Supplements</a></li>
-                      <li><a class="dropdown-item" href="#">Special Diets</a></li>
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown3', '#dogsDropdown')">Hygiene</a>
+                    <ul class="dropdown-menu" id="dogsSubDropdown3">
+                        <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                        <li><a class="dropdown-item" href="#">Perfumes</a></li>
+                        <li><a class="dropdown-item" href="#">Wipes</a></li>
+                        <li><a class="dropdown-item" href="#">Deodorant</a></li>
+                        <li><a class="dropdown-item" href="#">Grooming Gloves</a></li>
+                        <li><a class="dropdown-item" href="#">Toothpaste</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown2')">Cat Accessories</a>
-                    <ul class="dropdown-menu" id="dogsSubDropdown2">
-                      <li><a class="dropdown-item" href="#">Toys</a></li>
-                      <li><a class="dropdown-item" href="#">Beds</a></li>
-                      <li><a class="dropdown-item" href="#">Collars</a></li>
-                      <li><a class="dropdown-item" href="#">Grooming</a></li>
-                      <li><a class="dropdown-item" href="#">Litter</a></li>
+                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('dogsSubDropdown4', '#dogsDropdown')">Medication</a>
+                    <ul class="dropdown-menu" id="dogsSubDropdown4">
+                        <li><a class="dropdown-item" href="#">Flea & Tick</a></li>
+                        <li><a class="dropdown-item" href="#">Arthritis</a></li>
+                        <li><a class="dropdown-item" href="#">Supplements</a></li>
                     </ul>
                 </li>
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('birdsDropdown')">Birds</a>
-            <ul class="dropdown-menu" id="birdsDropdown">
-                <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('birdsSubDropdown1')">Name Sub Menu</a>
-                    <ul class="dropdown-menu" id="birdsSubDropdown1">
-                        <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                        <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                    </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-            </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('fishDropdown')">Fish</a>
-            <ul class="dropdown-menu" id="fishDropdown">
-                <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('fishSubDropdown1')">Name Sub Menu</a>
-                    <ul class="dropdown-menu" id="fishSubDropdown1">
-                        <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                        <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                    </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-            </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('reptileDropdown')">Reptile</a>
-            <ul class="dropdown-menu" id="reptileDropdown">
-                <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-                <li><a class="dropdown-item dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('reptileSubDropdown1')">Name Sub Menu</a>
-                    <ul class="dropdown-menu" id="reptileSubDropdown1">
-                        <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                        <li><a class="dropdown-item" href="#">Sub Sub Menu</a></li>
-                    </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Name Sub Menu</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact.html">Contact</a>
-        </li>
-    </ul>
-    <div class="p-4">
-        <div class="mb-2">
-            <form action="#">
-                <div class="row g-0">
-                    <div class="col-9">
-                        <input type="text" class="form-control rounded-end-0" placeholder="Type your search words...">
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary btn-block rounded-start-0 d-flex align-items-center justify-content-center w-100 h-100" type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <a class="btn btn-primary mb-2 d-flex align-items-center" href="/service.html">
-            Services
-        </a>
-        <a class="btn btn-primary mb-2 d-flex align-items-center" href="#">
-            <i class="fa fa-user-circle me-2"></i>
-            Login / Signup
-        </a>
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('fishDropdown', '#mySidenav')">Fish</a>
+          <ul class="dropdown-menu" id="fishDropdown">
+              <li><a class="dropdown-item" href="#">Foods</a></li>
+              <li><a class="dropdown-item" href="#">Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Supplements</a></li>
+          </ul>
+      </li>
 
-    </div>
-    <div class="px-4 pb-4">
-        <ul class="d-flex mb-4 justify-content-around">
-            <li><a href="#" class="fb fab fa-facebook-f"></a></li>
-            <li><a href="#" class="twx fab fa-x-twitter"></a></li>
-            <li><a href="#" class="li fab fa-linkedin-in"></a></li>
-            <li><a href="#" class="in fab fa-instagram"></a></li>
-            <li><a href="#" class="yt fab fa-youtube"></a></li>
-        </ul>
-    </div>
-</div>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" onclick="toggleDropdown('birdsDropdown', '#mySidenav')">Birds</a>
+          <ul class="dropdown-menu" id="birdsDropdown">
+              <li><a class="dropdown-item" href="#">Foods</a></li>
+              <li><a class="dropdown-item" href="#">Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Supplements</a></li>
+          </ul>
+      </li>
+    </ul>
+  </div>
 
   <div id="sidebody" onclick="openNav()" ></div>
 
